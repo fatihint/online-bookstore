@@ -1,17 +1,17 @@
 /*
- * custumer.h
+ * Customer.h
  *
  *  Created on: 24 Ara 2016
  *      Author: baran
  */
 #include <iostream>
 #include <string>
-#ifndef CUSTUMER_H_
-#define CUSTUMER_H_
+#ifndef CUSTOMER_H_
+#define CUSTOMER_H_
 using namespace std;
-class custumer{
+class Customer{
 private:
-	long custumerID;
+	long customerID;
 	string name;
 	string adress;
 	string phone;
@@ -21,8 +21,8 @@ private:
 	string password;
 public:
 	void sendBill();
-	long getCustumerID() const;
-	void setCustumerID(long _custumerID);
+	long getCustomerID() const;
+	void setCustomerID(long _customerID);
 	void getName() const;
 	void setName(string _name);
 	string getAdress() const;
@@ -46,4 +46,4 @@ public:
 
 
 
-#endif /* CUSTUMER_H_ */
+#endif /* CUSTOMER_H_ */
