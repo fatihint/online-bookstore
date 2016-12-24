@@ -11,3 +11,11 @@ double Payment::getAmount() const{
 void Payment::setAmount(double amount) {
     this->amount = amount;
 }
+
+Payment::Payment(int amount = 1) {
+    this->amount = amount;
+}
+
+Payment::~Payment() {
+
+}

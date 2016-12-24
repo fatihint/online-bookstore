@@ -13,6 +13,8 @@ private:
     string name;
     double price;
 public:
+    Product(int,string,double);
+    ~Product();
     int getId() const;
     void setId(int);
     string getName() const;

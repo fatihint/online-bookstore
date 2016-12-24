@@ -10,6 +10,8 @@ class Payment {
 private:
     double amount;
 public:
+    Payment(int = 1);
+    ~Payment();
     double getAmount() const;
     void setAmount(double);
     virtual void performPayment() = 0;

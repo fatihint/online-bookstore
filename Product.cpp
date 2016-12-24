@@ -27,3 +27,13 @@ double Product::getPrice() const{
 void Product::setPrice(double price) {
     this->price = price;
 }
+
+Product::Product(int id, string name, double price) {
+    this->id = id;
+    this->name = name;
+    this->price = price;
+}
+
+Product::~Product() {
+
+}
