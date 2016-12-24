@@ -11,25 +11,25 @@ using namespace std;
 void custumer::sendBill(){
 
 }
-long custumer::getCustumerID(){
+long custumer::getCustumerID() const{
 	return custumerID;
 }
 void custumer::setCustumerID(long _custumerID){
 	custumerID=_custumerID;
 }
-string custumer::getName(){
+string custumer::getName() const{
 	return name;
 }
 void custumer::setName(string _name){
 	name=_name;
 }
-string custumer::getAdress(){
+string custumer::getAdress() const{
 	return adress;
 }
 void custumer::setAdress(string _adress){
 	adress=_adress;
 }
-string custumer::getPhone(){
+string custumer::getPhone() const{
 	return phone;
 }
 void custumer::setPhone(string _phone){
@@ -41,19 +41,19 @@ string custumer::getEmail(){
 void custumer::setEmail(string _email){
 	email=_email;
 }
-double custumer::getBonus(){
+double custumer::getBonus() const{
 	return bonus;
 }
 void custumer::setBonus(double _bonus){
 	bonus=_bonus;
 }
-string custumer::getUsername(){
+string custumer::getUsername() const{
 	return username;
 }
 void custumer::setUsername(string _username){
 	username=_username;
 }
-string custumer::getPassword(){
+string custumer::getPassword() const{
 	return password;
 }
 void custumer::setPassword(string _password){
