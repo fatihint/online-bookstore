@@ -12,11 +12,11 @@ using namespace std;
 
 class ProductToPurchase{
 private:
-	Product product;
+	Product* product;
 	int quantity;
 public:
-	Product getProduct() const;
-	void setProduct(Product _Product);
+	Product* getProduct() const;
+	void setProduct(Product* _Product);
 	int getQuantity() const;
 	void setQuantity(int _quantity);
 };

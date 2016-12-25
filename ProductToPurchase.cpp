@@ -8,11 +8,11 @@
 #include 'Product.h'
 #include 'ProdouctToPurchase.h'
 
-	Product ProductToPurchase::getProduct() const{
-		return Product;
+	Product* ProductToPurchase::getProduct() const{
+		return *Product;
 	}
-	void ProductToPurchase::setProduct(product _Product){
-		Product=_Product;
+	void ProductToPurchase::setProduct(Product* _Product){
+		product=_Product;
 	}
 	int ProductToPurchase::getQuantity() const{
 		return quantity;
