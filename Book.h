@@ -17,7 +17,7 @@ private:
 	string publisher;
 	int page;
 public:
-	Book(int,string,double,string,string);
+	Book(int,string,double,string,string,int);
 	Book(int,string,double);
 	virtual ~Book();
 	void printProperties();

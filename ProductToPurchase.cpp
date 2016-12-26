@@ -4,13 +4,12 @@
  *  Created on: 24 Ara 2016
  *      Author: baran
  */
-#include <iostream>
+
 #include "ProductToPurchase.h"
-// denememe
-ProductToPurchase(){
+ProductToPurchase::ProductToPurchase(){
 	
 }
-ProductToPurchase(Product* _product,int _quantity=1){
+ProductToPurchase::ProductToPurchase(Product* _product,int _quantity=1){
 	quantity=_quantity;
 	product=_product;
 }

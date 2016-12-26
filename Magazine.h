@@ -7,8 +7,9 @@
 
 #ifndef MAGAZINE_H_
 #define MAGAZINE_H_
-
 #include<iostream>
+#include "Product.h"
+
 using namespace std;
 class Magazine:public Product {
 private:

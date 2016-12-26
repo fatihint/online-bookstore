@@ -27,11 +27,15 @@ Magazine::Magazine(int id,string name ,double price,int Issue,string type):Produ
 	this->Issue=Issue;
 	this->type=type;
 }
-Magazine:Magazine(int id,string name ,double price):Product(id,name,price){
+Magazine::Magazine(int id,string name ,double price):Product(id,name,price){
 
 }
 
 Magazine::~Magazine() {
+
+}
+
+void Magazine::printProperties() {
 
 }
 

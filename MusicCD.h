@@ -7,8 +7,9 @@
 
 #ifndef MUSICCD_H_
 #define MUSICCD_H_
-
 #include <iostream>
+#include "Product.h"
+
 using namespace std;
 
 class MusicCD:public Product {

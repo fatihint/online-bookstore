@@ -34,6 +34,10 @@ MusicCD::~MusicCD() {
 
 }
 
+void MusicCD::printProperties() {
+
+}
+
 //int id;
 //string name;
 //double price;

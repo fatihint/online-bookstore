@@ -5,6 +5,7 @@
  *      Author: eren
  */
 
+#include <queue>
 #include "Check.h"
 
 string Check::getName() const{
@@ -28,10 +29,12 @@ Check::Check(int amount,string name,string bankID):Payment(amount){
 	this->bankID=bankID;
 
 }
-Check:Check(int amount):Payment(amount){
-
-}
 Check::~Check() {
 
 }
+
+Check::Check(int amount) : Payment(amount){
+
+}
+
 

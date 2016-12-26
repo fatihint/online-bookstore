@@ -43,3 +43,7 @@ Book::~Book() {
 
 }
 
+void Book::printProperties() {
+
+}
+
