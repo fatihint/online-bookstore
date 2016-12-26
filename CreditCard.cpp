@@ -5,7 +5,6 @@
  *      Author: baran
  */
 #include <iostream>
-#include <queue>
 #include "CreditCard.h"
 
 CreditCard::CreditCard(int amount):Payment(amount){

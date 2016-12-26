@@ -26,5 +26,5 @@ public:
   void setType(string _type);
   string getExpDate() const;
   void setExpDate(string _expDate);
-}
+};
 #endif CreditCard_H_

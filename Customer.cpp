@@ -10,7 +10,7 @@ using namespace std;
 Customer::Customer(){
 	
 }
-~Customer(){
+Customer::~Customer(){
 	
 }
 void Customer::sendBill(){

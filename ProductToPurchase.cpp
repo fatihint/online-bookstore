@@ -13,7 +13,7 @@ ProductToPurchase::ProductToPurchase(Product* _product,int _quantity=1){
 	quantity=_quantity;
 	product=_product;
 }
-~ProductToPurchase(){
+ProductToPurchase::~ProductToPurchase(){
 	
 }
 Product* ProductToPurchase::getProduct() const{
