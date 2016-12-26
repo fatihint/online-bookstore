@@ -12,7 +12,7 @@ class Cash:public Payment {
 
 public:
 
-	Cash();
+	Cash(int);
 	virtual ~Cash();
 };
 

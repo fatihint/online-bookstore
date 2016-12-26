@@ -15,7 +15,8 @@ private:
 	string name;
 	string bankID;
 public:
-	Check();
+	Check(int,string,string);
+	Check(int);
 	virtual ~Check();
 	string getName() const;
 	void setName(string);

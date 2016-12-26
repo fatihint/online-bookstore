@@ -22,12 +22,18 @@ string MusicCD::getType() const {
 void MusicCD::setType(string){
 	this->type=type;
 }
-MusicCD::MusicCD(string singer,string type) {
+MusicCD::MusicCD(int id,string name ,double price, string singer,string type):Product(id,name,price) {
 	this->singer=singer;
 	this->type=type;
+}
+MusicCD::MusicCD(int id,string name ,double price):Product(id,name,price){
+
 }
 
 MusicCD::~MusicCD() {
 
 }
 
+//int id;
+//string name;
+//double price;

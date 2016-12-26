@@ -7,7 +7,7 @@
 
 #include "Cash.h"
 
-Cash::Cash() {
+Cash::Cash(int amount):Payment(amount) {
 
 
 }

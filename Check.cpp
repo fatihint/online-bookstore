@@ -23,12 +23,14 @@ void Check::setBankID(string){
 	this->bankID=bankID;
 }
 
-Check::Check(string name,string bankID) {
+Check::Check(int amount,string name,string bankID):Payment(amount){
 	this->name=name;
 	this->bankID=bankID;
 
 }
+Check:Check(int amount):Payment(amount){
 
+}
 Check::~Check() {
 
 }
