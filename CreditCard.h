@@ -17,6 +17,9 @@ private:
   string type;
   string expDate;
 public:
+  CreditCard(int);
+  CreditCard(int ,long,string,string);
+  ~CreditCard();
   long getNumber() const;
   void setNumber(int _number) const;
   string getType() const;

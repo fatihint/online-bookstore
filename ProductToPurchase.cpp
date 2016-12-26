@@ -7,7 +7,16 @@
 #include <iostream>
 #include "ProductToPurchase.h"
 // denememe
-
+ProductToPurchase(){
+	
+}
+ProductToPurchase(Product* _product,int _quantity=1){
+	quantity=_quantity;
+	product=_product;
+}
+~ProductToPurchase(){
+	
+}
 Product* ProductToPurchase::getProduct() const{
 	return product;
 }

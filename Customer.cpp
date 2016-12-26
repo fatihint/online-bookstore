@@ -8,6 +8,12 @@
 #include <iostream>
 #include <string>
 using namespace std;
+Customer(){
+	
+}
+~Customer(){
+	
+}
 void Customer::sendBill(){
 
 }
