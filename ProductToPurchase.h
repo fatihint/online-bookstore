@@ -16,6 +16,9 @@ private:
 	Product* product;
 	int quantity;
 public:
+	ProductToPurchase();
+	ProductToPurchase(Product*,int);
+	~ProductToPurchase();
 	Product * getProduct() const;
 	void setProduct(Product*);
 	int getQuantity() const;

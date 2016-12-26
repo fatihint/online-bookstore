@@ -20,6 +20,8 @@ private:
 	string username;
 	string password;
 public:
+	Customer();
+	~Customer();
 	void sendBill();
 	long getCustomerID() const;
 	void setCustomerID(long _customerID);
