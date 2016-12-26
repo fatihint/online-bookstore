@@ -8,6 +8,7 @@
 #ifndef BOOK_H_
 #define BOOK_H_
 #include <iostream>
+#include "Product.h"
 using namespace std;
 
 class Book:public Product{

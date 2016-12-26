@@ -35,7 +35,6 @@ Book::Book(string author,string publisher,int page) {
 	this->author=author;
 	this->publisher=publisher;
 	this->page=page;
-
 }
 
 Book::~Book() {
