@@ -22,3 +22,4 @@ public:
 	void setQuantity(int _quantity);
 };
 #endif ProdouctToPurchase_H_
+// deneme

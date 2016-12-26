@@ -6,6 +6,7 @@
  */
 #include <iostream>
 #include "ProductToPurchase.h"
+// denememe
 
 Product* ProductToPurchase::getProduct() const{
 	return product;
