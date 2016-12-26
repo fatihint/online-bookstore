@@ -5,18 +5,17 @@
  *      Author: baran
  */
 #include <iostream>
-#include 'Product.h'
-#include 'ProdouctToPurchase.h'
+#include "ProductToPurchase.h"
 
-	Product ProductToPurchase::getProduct() const{
-		return Product;
-	}
-	void ProductToPurchase::setProduct(product _Product){
-		Product=_Product;
-	}
-	int ProductToPurchase::getQuantity() const{
-		return quantity;
-	}
-	void ProductToPurchase::setQuantity(int _quantity){
-		quantity=_quantity;
-	}
+Product * ProductToPurchase::getProduct() const{
+	return product;
+}
+void ProductToPurchase::setProduct(Product* _Product){
+	product = _Product;
+}
+int ProductToPurchase::getQuantity() const{
+	return quantity;
+}
+void ProductToPurchase::setQuantity(int _quantity){
+	quantity=_quantity;
+}

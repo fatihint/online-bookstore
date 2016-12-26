@@ -23,12 +23,10 @@ public:
 	void sendBill();
 	long getCustomerID() const;
 	void setCustomerID(long _customerID);
-	void getName() const;
 	void setName(string _name);
 	string getAdress() const;
 	void setAdress(string _adress);
 	string getName() const;
-	void setName(string _name);
 	string getPhone() const;
 	void setPhone(string _phone);
 	string getEmail() const;

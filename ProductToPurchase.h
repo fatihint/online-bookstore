@@ -5,18 +5,19 @@
  *      Author: baran
  */
 #include <iostream>
-#ifndef ProdouctToPurchase_H_
-#define ProdouctToPurchase_H_
-#include 'Product.h'
+#ifndef ProductToPurchase_H_
+#define ProductToPurchase_H_
+#include "Product.h"
+
 using namespace std;
 
 class ProductToPurchase{
 private:
-	Product product;
+	Product* product;
 	int quantity;
 public:
-	Product getProduct() const;
-	void setProduct(Product _Product);
+	Product * getProduct() const;
+	void setProduct(Product*);
 	int getQuantity() const;
 	void setQuantity(int _quantity);
 };

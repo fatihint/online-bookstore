@@ -10,7 +10,7 @@ class Payment {
 private:
     double amount;
 public:
-    Payment(int = 1);
+    Payment(int);
     ~Payment();
     double getAmount() const;
     void setAmount(double);

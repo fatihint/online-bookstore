@@ -4,7 +4,7 @@
  *  Created on: 24 Ara 2016
  *      Author: baran
  */
-#include 'Customer.h'
+#include "Customer.h"
 #include <iostream>
 #include <string>
 using namespace std;
@@ -35,7 +35,7 @@ string Customer::getPhone() const{
 void Customer::setPhone(string _phone){
 	phone=_phone;
 }
-string Customer::getEmail(){
+string Customer::getEmail() const{
 	return phone;
 }
 void Customer::setEmail(string _email){
