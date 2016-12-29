@@ -5,6 +5,7 @@
 #ifndef ONLINE_BOOKSTORE_PRODUCT_H
 #define ONLINE_BOOKSTORE_PRODUCT_H
 #include <iostream>
+#pragma once
 using namespace std;
 
 class Product {
@@ -21,7 +22,7 @@ public:
     void setName(string);
     double getPrice() const;
     void setPrice(double);
-    virtual void printProperties() const = 0;
+    virtual void printProperties() = 0;
 };
 
 

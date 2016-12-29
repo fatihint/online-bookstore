@@ -7,12 +7,14 @@
 
 #ifndef CASH_H_
 #define CASH_H_
+#pragma once
 #include "Payment.h"
 
 class Cash: public Payment {
 
 public:
-	Cash(int);
+	Cash(double);
+	void performPayment();
 	virtual ~Cash();
 };
 

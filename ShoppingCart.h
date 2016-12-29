@@ -4,6 +4,7 @@
 
 #ifndef ONLINE_BOOKSTORE_SHOPPINGCART_H
 #define ONLINE_BOOKSTORE_SHOPPINGCART_H
+#pragma once
 #include <list>
 #include "ProductToPurchase.h"
 #include "Payment.h"
@@ -15,22 +16,24 @@ private:
     list<ProductToPurchase*> productToPurchase;
     Payment* payment;
     Customer* customer;
-    bool isBonusUsed;
+    bool isBonusUsed = false;
 public:
     ShoppingCart();
-    ShoppingCart(Customer*, Payment*, list<ProductToPurchase*>);
+    ShoppingCart(Customer*);
     ~ShoppingCart();
     Payment* getPaymentMethod() const;
     void setPaymentMethod(Payment*);
     Customer* getCustomer() const;
     void setCustomer(Customer*);
     void setBonusUsed();
-    void addProduct(Product*);
+    void addProduct(Product*, int);
     void removeProduct(Product*);
     void placeOrder();
     void cancelOrder();
     void printProducts();
     void showInvoice();
+    int getProductCount();
+    int getTotalAmount();
 };
 
 

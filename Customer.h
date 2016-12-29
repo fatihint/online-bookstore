@@ -6,6 +6,7 @@
  */
 #include <iostream>
 #include <string>
+#pragma once
 #ifndef CUSTOMER_H_
 #define CUSTOMER_H_
 using namespace std;
@@ -19,6 +20,7 @@ private:
 	string email;
 	string username;
 	string password;
+	static int lastId;
 public:
 	Customer();
 	~Customer();
@@ -42,6 +44,8 @@ public:
 	bool checkAccount(string _username,string _password);
 	void addBonus(double _bill);
 	void useBonus();
+	static int getLastId();
+	static void setLastId();
 };
 
 

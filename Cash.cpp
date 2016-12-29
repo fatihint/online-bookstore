@@ -7,12 +7,16 @@
 
 #include "Cash.h"
 
-Cash::Cash(int amount):Payment(amount) {
+Cash::Cash(double amount):Payment(amount) {
 
 
 }
 
 Cash::~Cash() {
 
+}
+
+void Cash::performPayment() {
+    cout << getAmount() << " is paid as Cash." << endl;
 }
 

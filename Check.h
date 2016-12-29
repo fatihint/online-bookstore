@@ -7,6 +7,7 @@
 
 #ifndef CHECK_H_
 #define CHECK_H_
+#pragma once
 #include <iostream>
 #include "Payment.h"
 
@@ -16,14 +17,14 @@ private:
 	string name;
 	string bankID;
 public:
-	Check(int,string,string);
-	Check(int);
+	Check(double,string,string);
+	Check(double);
 	virtual ~Check();
 	string getName() const;
 	void setName(string);
 	string getBankID() const;
 	void setBankID(string);
-
+	void performPayment();
 
 };
 

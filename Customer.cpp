@@ -7,8 +7,12 @@
 #include "Customer.h"
 #include <iostream>
 using namespace std;
+
+int Customer::lastId = 0;
+
 Customer::Customer(){
-	
+	setLastId();
+	customerID = getLastId();
 }
 Customer::~Customer(){
 	
@@ -41,7 +45,7 @@ void Customer::setPhone(string _phone){
 	phone=_phone;
 }
 string Customer::getEmail() const{
-	return phone;
+	return email;
 }
 void Customer::setEmail(string _email){
 	email=_email;
@@ -66,10 +70,7 @@ void Customer::setPassword(string _password){
 }
 //control the password and the username correct from custumer
 bool Customer::checkAccount(string _username,string _password){
-	if(username==_username && password==_password)
-		return true;
-	else
-		return false;
+	return(username == _username && password == _password);
 }
 //bonus decrease each shopping %1 of bill
 void Customer::addBonus(double _bill){
@@ -77,4 +78,12 @@ void Customer::addBonus(double _bill){
 }
 void Customer::useBonus(){
 
+}
+
+int Customer::getLastId() {
+	return lastId;
+}
+
+void Customer::setLastId() {
+	lastId++;
 }

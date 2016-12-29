@@ -44,6 +44,8 @@ Book::~Book() {
 }
 
 void Book::printProperties() {
-
+	cout << "Book Author: " << author << endl;
+	cout << "Book Publisher: " << publisher << endl;
+	cout << "Book Page: " << page << endl;
 }
 

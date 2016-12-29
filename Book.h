@@ -9,6 +9,7 @@
 #define BOOK_H_
 #include <iostream>
 #include "Product.h"
+#pragma once
 using namespace std;
 
 class Book:public Product{
@@ -19,7 +20,7 @@ private:
 public:
 	Book(int,string,double,string,string,int);
 	Book(int,string,double);
-	virtual ~Book();
+	~Book();
 	void printProperties();
 	string getAuthor() const;
 	void setAuthor(string);

@@ -36,6 +36,7 @@ Magazine::~Magazine() {
 }
 
 void Magazine::printProperties() {
-
+	cout << "Magazine Type: " << type << endl;
+	cout << "Magazine Issue: " << Issue << endl;
 }
 

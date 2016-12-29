@@ -4,9 +4,10 @@
  *  Created on: 24 Ara 2016
  *      Author: baran
  */
-#include <iostream>
+#pragma once
 #ifndef ProductToPurchase_H_
 #define ProductToPurchase_H_
+#include <iostream>
 #include "Product.h"
 
 using namespace std;
@@ -17,11 +18,11 @@ private:
 	int quantity;
 public:
 	ProductToPurchase();
-	ProductToPurchase(Product*,int);
+	ProductToPurchase(Product*,int = 1);
 	~ProductToPurchase();
 	Product * getProduct() const;
 	void setProduct(Product*);
 	int getQuantity() const;
 	void setQuantity(int _quantity);
 };
-#endif ProdouctToPurchase_H_
+#endif //ProdouctToPurchase_H_

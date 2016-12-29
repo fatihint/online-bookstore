@@ -35,7 +35,8 @@ MusicCD::~MusicCD() {
 }
 
 void MusicCD::printProperties() {
-
+	cout << "MusicCD Type: " << type << endl;
+	cout << "MusicCD Singer: " << singer << endl;
 }
 
 //int id;

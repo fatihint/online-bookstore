@@ -9,6 +9,7 @@
 #define MAGAZINE_H_
 #include<iostream>
 #include "Product.h"
+#pragma once
 
 using namespace std;
 class Magazine:public Product {

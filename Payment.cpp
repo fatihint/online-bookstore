@@ -12,7 +12,7 @@ void Payment::setAmount(double amount) {
     this->amount = amount;
 }
 
-Payment::Payment(int amount) {
+Payment::Payment(double amount) {
     this->amount = amount;
 }
 

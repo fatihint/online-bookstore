@@ -24,7 +24,7 @@ void Check::setBankID(string){
 	this->bankID=bankID;
 }
 
-Check::Check(int amount,string name,string bankID):Payment(amount){
+Check::Check(double amount,string name,string bankID):Payment(amount){
 	this->name=name;
 	this->bankID=bankID;
 
@@ -33,8 +33,12 @@ Check::~Check() {
 
 }
 
-Check::Check(int amount) : Payment(amount){
+Check::Check(double amount) : Payment(amount){
 
+}
+
+void Check::performPayment() {
+ cout << getAmount() << "is paid as Check." << endl;
 }
 
 
