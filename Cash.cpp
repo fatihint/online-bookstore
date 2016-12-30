@@ -20,3 +20,7 @@ void Cash::performPayment() {
     cout << getAmount() << " is paid as Cash." << endl;
 }
 
+string Cash::paymentInfo() {
+    string info = to_string(getAmount()) + " TL is paid as Cash. \n";
+    return info;
+}

@@ -15,6 +15,7 @@ class Cash: public Payment {
 public:
 	Cash(double);
 	void performPayment();
+	string paymentInfo();
 	virtual ~Cash();
 };
 

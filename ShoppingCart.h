@@ -16,7 +16,7 @@ private:
     list<ProductToPurchase*> productToPurchase;
     Payment* payment;
     Customer* customer;
-    bool isBonusUsed = false;
+    bool isBonusUsed;
 public:
     ShoppingCart();
     ShoppingCart(Customer*);
@@ -31,9 +31,9 @@ public:
     void placeOrder();
     void cancelOrder();
     void printProducts();
-    void showInvoice();
+    string showInvoice();
     int getProductCount();
-    int getTotalAmount();
+    double getTotalAmount();
 };
 
 

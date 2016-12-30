@@ -52,4 +52,9 @@ void CreditCard::performPayment() {
     cout << getAmount() << " is paid with credit card with " << getNumber() << " number" << endl;
 }
 
+string CreditCard::paymentInfo() {
+    string info = to_string(getAmount()) + " TL is paid as Credit Card. \n";
+    return info;
+}
+
 

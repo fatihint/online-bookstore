@@ -9,11 +9,18 @@
 #include "Menu.h"
 #include "Product.h"
 #include "Customer.h"
+#include "ShoppingCart.h"
 
 class ShoppingMenu : public Menu {
 private:
     vector<Product*> productList;
-    vector<Customer> customerList; ;
+    vector<Customer> customerList;
+    bool session;
+    bool order;
+    double totalAmount;
+    ShoppingCart* cart;
+    Customer* c;
+    string Invoice;
 public:
     ShoppingMenu(string title, string* subs, int size, vector<Product*> pList, vector<Customer> cList) : Menu(title, subs, size){
         productList = pList;

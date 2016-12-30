@@ -77,14 +77,8 @@ void ShoppingCart::printProducts() {
     }
 }
 
-void ShoppingCart::showInvoice() {
-    cout << "Invoice " << endl;
-    cout << "Name: " << getCustomer()->getName();
-    cout << "Adress: " << getCustomer()->getAdress();
-    cout << "Phone: " << getCustomer()->getPhone();
-    cout << "Email: " << getCustomer()->getEmail();
-    cout << "Payment: ";
-    payment->performPayment();
+string ShoppingCart::showInvoice() {
+    return "Name: " + getCustomer()->getName() + " - Adress: " + getCustomer()->getAdress() + " - Phone: " + getCustomer()->getPhone() + " - Email: " + getCustomer()->getEmail() + " - Payment: " + payment->paymentInfo();
 }
 
 int ShoppingCart::getProductCount() {
@@ -96,7 +90,7 @@ int ShoppingCart::getProductCount() {
     return i;
 }
 
-int ShoppingCart::getTotalAmount() {
+double ShoppingCart::getTotalAmount() {
     double total = 0;
     list<ProductToPurchase*>::iterator it;
     for(it=productToPurchase.begin(); it!=productToPurchase.end(); it++){

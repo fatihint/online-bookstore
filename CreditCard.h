@@ -28,5 +28,6 @@ public:
   string getExpDate() const;
   void setExpDate(string _expDate);
   void performPayment();
+    string paymentInfo();
 };
 #endif //CreditCard_H_

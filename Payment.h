@@ -16,6 +16,7 @@ public:
     double getAmount() const;
     void setAmount(double);
     virtual void performPayment() = 0;
+    virtual string paymentInfo() = 0;
 };
 
 #endif //ONLINE_BOOKSTORE_PAYMENT_H

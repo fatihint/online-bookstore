@@ -25,6 +25,7 @@ public:
 	string getBankID() const;
 	void setBankID(string);
 	void performPayment();
+	string paymentInfo();
 
 };
 

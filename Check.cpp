@@ -41,4 +41,9 @@ void Check::performPayment() {
  cout << getAmount() << "is paid as Check." << endl;
 }
 
+string Check::paymentInfo() {
+	string info = to_string(getAmount()) + " TL is paid as Check. \n";
+	return info;
+}
+
 
