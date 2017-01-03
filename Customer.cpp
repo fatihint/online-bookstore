@@ -18,7 +18,7 @@ Customer::~Customer(){
 	
 }
 void Customer::sendBill(){
-
+	cout << "Bill was sent to " << adress << endl;
 }
 long Customer::getCustomerID() const{
 	return customerID;
@@ -73,13 +73,17 @@ bool Customer::checkAccount(string _username,string _password){
 	return(username == _username && password == _password);
 }
 //bonus decrease each shopping %1 of bill
-void Customer::addBonus(double _bill){
-	bonus+=_bill/100;
+void Customer::addBonus(double amount){
+	bonus+=amount;
 }
-void Customer::useBonus(){
-
+void Customer::useBonus(double amount){
+	if(bonus - amount >= 0){
+		bonus -= amount;
+	}
+	else{
+		bonus = 0;
+	}
 }
-
 int Customer::getLastId() {
 	return lastId;
 }

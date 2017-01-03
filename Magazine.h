@@ -17,8 +17,8 @@ private:
 	int Issue;
 	string type;
 public:
-	Magazine(int,string,double,int,string);
-	Magazine(int,string,double);
+	Magazine(string,double,int,string);
+	Magazine(string,double);
 	virtual ~Magazine();
 	void printProperties();
 	int getIssue()const;

@@ -13,8 +13,9 @@ private:
     int id;
     string name;
     double price;
+    static int lastId;
 public:
-    Product(int,string,double);
+    Product(string,double);
     ~Product();
     int getId() const;
     void setId(int);
@@ -22,6 +23,8 @@ public:
     void setName(string);
     double getPrice() const;
     void setPrice(double);
+    static int getLastId();
+    static void setLastId();
     virtual void printProperties() = 0;
 };
 

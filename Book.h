@@ -18,8 +18,8 @@ private:
 	string publisher;
 	int page;
 public:
-	Book(int,string,double,string,string,int);
-	Book(int,string,double);
+	Book(string,double,string,string,int);
+	Book(string,double);
 	~Book();
 	void printProperties();
 	string getAuthor() const;

@@ -99,3 +99,7 @@ double ShoppingCart::getTotalAmount() {
     return total;
 }
 
+bool ShoppingCart::getBonusUsed() {
+    return isBonusUsed;
+}
+

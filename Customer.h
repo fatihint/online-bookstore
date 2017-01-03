@@ -42,8 +42,8 @@ public:
 	string getPassword() const;
 	void setPassword(string _password);
 	bool checkAccount(string _username,string _password);
-	void addBonus(double _bill);
-	void useBonus();
+	void addBonus(double);
+	void useBonus(double);
 	static int getLastId();
 	static void setLastId();
 };

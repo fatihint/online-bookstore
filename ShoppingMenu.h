@@ -13,18 +13,23 @@
 
 class ShoppingMenu : public Menu {
 private:
-    vector<Product*> productList;
-    vector<Customer> customerList;
+    vector<Product*> *productList;
+    vector<Product*> pList;
+    vector<Customer> *customerList;
+    vector<Customer> cList;
     bool session;
     bool order;
     double totalAmount;
+    double bonus;
     ShoppingCart* cart;
     Customer* c;
     string Invoice;
 public:
-    ShoppingMenu(string title, string* subs, int size, vector<Product*> pList, vector<Customer> cList) : Menu(title, subs, size){
-        productList = pList;
-        customerList = cList;
+    ShoppingMenu(string title, string* subs, int size, vector<Product*> *proList, vector<Customer> *cusList) : Menu(title, subs, size){
+        productList = proList;
+        pList = *productList;
+        customerList = cusList;
+        cList = *customerList;
     }
 
     const vector<Product *> &getProductList() const;

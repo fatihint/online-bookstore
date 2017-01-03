@@ -17,8 +17,8 @@ private:
 	string singer;
 	string type;
 public:
-	MusicCD(int,string,double,string,string);
-	MusicCD(int,string,double);
+	MusicCD(string,double,string,string);
+	MusicCD(string,double);
 	virtual ~MusicCD();
 	void printProperties();
 	string getSinger() const;

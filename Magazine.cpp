@@ -23,11 +23,11 @@ void Magazine::setType(string){
 	this->type=type;
 }
 
-Magazine::Magazine(int id,string name ,double price,int Issue,string type):Product(id,name,price) {
+Magazine::Magazine(string name ,double price,int Issue,string type):Product(name,price) {
 	this->Issue=Issue;
 	this->type=type;
 }
-Magazine::Magazine(int id,string name ,double price):Product(id,name,price){
+Magazine::Magazine(string name ,double price):Product(name,price){
 
 }
 

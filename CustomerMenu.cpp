@@ -10,12 +10,7 @@ CustomerMenu::~CustomerMenu() {
 
 void CustomerMenu::menuSwitch(int menuInput) {
     Customer* c;
-    string name = "";
-    string address = "";
-    string username = "";
-    string password = "";
-    string email = "";
-    string phone = "";
+    string name = "",address = "",username = "",password = "",email = "",phone = "";
     switch (menuInput){
         case 1:
             cout << "\n";
@@ -39,16 +34,17 @@ void CustomerMenu::menuSwitch(int menuInput) {
             c->setPassword(password);
             c->setEmail(email);
             c->setPhone(phone);
-            Customer::setLastId();
-            c->setCustomerID(Customer::getLastId());
-            customerList.push_back(*c);
+            cusList->push_back(*c);
+            customerList = *cusList;
             cout << "Customer Added Successfully !" << endl;
             this->show();
             break;
         case 2:
-            if(customerList.size() != 0){
-                for(int i=0; i<customerList.size(); i++){
+            if(cusList->size() != 0){
+                for(int i=0; i<cusList->size(); i++){
+                    cout << "\n";
                     cout << customerList[i].getCustomerID() << ". " << customerList[i].getName() << endl;
+                    cout << "Username: " << customerList[i].getUsername() << endl;
                     cout << "Adress: " << customerList[i].getAdress() << endl;
                     cout << "Phone: " << customerList[i].getPhone() << endl;
                     cout << "Email: " << customerList[i].getEmail() << endl;

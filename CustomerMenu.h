@@ -11,10 +11,12 @@
 
 class CustomerMenu : public Menu {
 private:
+    vector<Customer> *cusList;
     vector<Customer> customerList;
 public:
-    CustomerMenu(string title, string* subs, int size, vector<Customer> cList) : Menu(title, subs, size){
-        customerList = cList;
+    CustomerMenu(string title, string* subs, int size, vector<Customer> *cList) : Menu(title, subs, size){
+        cusList = cList;
+        customerList = *cusList;
     }
     void setCustomerList(const vector<Customer> &customerList);
     const vector<Customer> &getCustomerList() const;
