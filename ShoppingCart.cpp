@@ -46,24 +46,18 @@ void ShoppingCart::addProduct(Product* p, int n) {
 }
 
 void ShoppingCart::removeProduct(Product *p) {
-    if(productToPurchase.size() == 0){
-        cout << "Shopping Cart is empty !" << endl;
-    }
-    else{
-        list<ProductToPurchase*>::iterator it;
-        for(it=productToPurchase.begin(); it!=productToPurchase.end(); it++){
-            if(p->getId() == (*it)->getProduct()->getId()){
-                productToPurchase.remove(*it);
-                break;
-            }
+    list<ProductToPurchase*>::iterator it;
+    for(it=productToPurchase.begin(); it!=productToPurchase.end(); it++){
+        if(p->getId() == (*it)->getProduct()->getId()){
+            productToPurchase.remove(*it);
+            break;
         }
     }
 }
 
 void ShoppingCart::placeOrder() {
-    if(payment != NULL){
-        payment->performPayment();
-    }
+    payment->performPayment();
+    customer->sendBill();
 }
 
 void ShoppingCart::cancelOrder() {

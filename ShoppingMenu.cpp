@@ -76,22 +76,28 @@ void ShoppingMenu::menuSwitch(int menuInput) {
             break;
         case 3:
             if(session){
-                itemName = "";
-                bool found = false;
-                cout << "Product name: ";
-                cin.ignore();
-                getline(cin, itemName);
-                for(int i=0; i<productList->size(); i++){
-                    if(pList[i]->getName() == itemName){
-                        found = true;
-                        cart->removeProduct(pList[i]);
-                        totalAmount = cart->getTotalAmount();
-                        cout << "Product removed ! " << endl;
+                if(cart->getProductCount() == 0){
+                    cout << "Shopping cart is empty !" << endl;
+                }
+                else{
+                    itemName = "";
+                    bool found = false;
+                    cout << "Product name: ";
+                    cin.ignore();
+                    getline(cin, itemName);
+                    for(int i=0; i<productList->size(); i++){
+                        if(pList[i]->getName() == itemName){
+                            found = true;
+                            cart->removeProduct(pList[i]);
+                            totalAmount = cart->getTotalAmount();
+                            cout << "Product removed ! " << endl;
+                        }
+                    }
+                    if(!found){
+                        cout << "Product not found, please check the name..." << endl;
                     }
                 }
-                if(!found){
-                    cout << "Product not found, please check the name..." << endl;
-                }
+
             }
             else{
                 cout << "You are not logged in " << endl;
