@@ -5,7 +5,6 @@
  *      Author: eren
  */
 
-#include <iomanip>
 #include "Cash.h"
 
 Cash::Cash(double amount):Payment(amount) {
@@ -18,7 +17,7 @@ Cash::~Cash() {
 }
 
 void Cash::performPayment() {
-    cout << setprecision(5) << getAmount() << " TL is paid as Cash." << endl;
+    cout << getAmount() << " is paid as Cash." << endl;
 }
 
 string Cash::paymentInfo() {

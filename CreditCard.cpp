@@ -5,7 +5,6 @@
  *      Author: baran
  */
 #include <iostream>
-#include <iomanip>
 #include "CreditCard.h"
 
 CreditCard::CreditCard(double amount):Payment(amount){
@@ -45,13 +44,12 @@ void CreditCard::performPayment() {
 
     cout << "Enter Credit Card Number (Without Space): ";
     cin >> number;
-    cout << "Enter Credit Expiry Date: ";
-    cin.ignore();
-    getline(cin,expDate);
+    cout << "Enter Credit Expiry Date (Without Space) ";
+    cin >> expDate;
     setNumber(number);
     setExpDate(expDate);
 
-    cout << setprecision(5) << getAmount() << " TL is paid with credit card with " << this->number << " number. Cart expires in " << expDate << endl;
+    cout << getAmount() << " is paid with credit card with " << getNumber() << " number" << endl;
 }
 
 string CreditCard::paymentInfo() {

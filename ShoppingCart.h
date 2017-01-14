@@ -26,7 +26,6 @@ public:
     Customer* getCustomer() const;
     void setCustomer(Customer*);
     void setBonusUsed();
-    bool getBonusUsed();
     void addProduct(Product*, int);
     void removeProduct(Product*);
     void placeOrder();

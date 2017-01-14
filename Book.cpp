@@ -31,12 +31,12 @@ void Book::setPage(int){
 	this->page=page;
 }
 
-Book::Book(string name, double price,string author,string publisher,int page):Product(name,price){
+Book::Book(int id, string name, double price,string author,string publisher,int page):Product(id,name,price){
 	this->author=author;
 	this->publisher=publisher;
 	this->page=page;
 }
-Book::Book(string name, double price):Product(name,price){
+Book::Book(int id, string name, double price):Product(id,name,price){
 
 }
 Book::~Book() {
