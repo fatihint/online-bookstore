@@ -1,12 +1,20 @@
-//
-// Created by fatih on 29.12.2016.
-//
+/**
+ * @file ProductMenu.cpp
+ * @Author fatih (fatihint@gmail.com)
+ * @date December, 2016
+ * @brief This file implements ProductMenu class functions
+ */ 
+
 
 #include "ProductMenu.h"
 
 ProductMenu::~ProductMenu() {
 
 }
+/*!
+ \param menuInput an int argument.
+ 
+*/ 
 void ProductMenu::menuSwitch(int menuInput) {
     switch (menuInput){
             case 1:
@@ -27,11 +35,18 @@ void ProductMenu::menuSwitch(int menuInput) {
                 break;
         }
 }
+/*!
+ 
+ \return productList a Product argument.
 
+*/ 
 const vector<Product *> &ProductMenu::getProductList() const {
     return productList;
 }
-
+/*!
+ \param productList an Product argument.
+ 
+*/ 
 void ProductMenu::setProductList(const vector<Product *> &productList) {
     ProductMenu::productList = productList;
 }

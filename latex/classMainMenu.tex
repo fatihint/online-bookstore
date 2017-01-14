@@ -9,32 +9,34 @@
 
 {\ttfamily \#include $<$Main\+Menu.\+h$>$}
 
-Inheritance diagram for Main\+Menu\+:\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[height=2.000000cm]{classMainMenu}
-\end{center}
-\end{figure}
+
+
+Inheritance diagram for Main\+Menu\+:
+% FIG 0
+
+
+Collaboration diagram for Main\+Menu\+:
+% FIG 1
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-const vector$<$ \hyperlink{classProduct}{Product} $\ast$ $>$ \& \hyperlink{classMainMenu_ae122d42a6ffd8735c4abcd789473a4e9}{get\+Product\+List} () const
+const vector$<$ \hyperlink{classProduct}{Product} $\ast$ $>$ \& \hyperlink{classMainMenu_af797940403e4861707ec38b49c3bb877}{get\+Product\+List} () const 
 \begin{DoxyCompactList}\small\item\em Gets product\+List. \end{DoxyCompactList}\item 
-const vector$<$ \hyperlink{classCustomer}{Customer} $>$ \& \hyperlink{classMainMenu_ac1e7ab45aeaf1245b7dd534e2a535ed8}{get\+Customer\+List} () const
+const vector$<$ \hyperlink{classCustomer}{Customer} $>$ \& \hyperlink{classMainMenu_a767a7b46b797999747042dbac8a7fa1b}{get\+Customer\+List} () const 
 \begin{DoxyCompactList}\small\item\em Gets customer\+List. \end{DoxyCompactList}\item 
-void \hyperlink{classMainMenu_aae749e64ea9bf630ae4340a446bcf8a7}{set\+Product\+List} (const vector$<$ \hyperlink{classProduct}{Product} $\ast$$>$ \&product\+List)
+void \hyperlink{classMainMenu_a7e92c219fdadcfcf8d34d25d14ed90e0}{set\+Product\+List} (const vector$<$ \hyperlink{classProduct}{Product} $\ast$ $>$ \&product\+List)
 \begin{DoxyCompactList}\small\item\em Sets product\+List. \end{DoxyCompactList}\item 
 void \hyperlink{classMainMenu_aa78eaffbe8203475575aac6f330497c9}{set\+Customer\+List} (const vector$<$ \hyperlink{classCustomer}{Customer} $>$ \&customer\+List)
 \begin{DoxyCompactList}\small\item\em Sets customer\+List. \end{DoxyCompactList}\item 
-\hyperlink{classProductMenu}{Product\+Menu} $\ast$ \hyperlink{classMainMenu_a96cf34491424fb414023b2ae6f64540b}{get\+Product\+Menu} () const
+\hyperlink{classProductMenu}{Product\+Menu} $\ast$ \hyperlink{classMainMenu_a6803aa733e52be3d4987aea068da1f61}{get\+Product\+Menu} () const 
 \begin{DoxyCompactList}\small\item\em Gets product\+Menu. \end{DoxyCompactList}\item 
 void \hyperlink{classMainMenu_aaca12cbc08bfe9533544375cd8da5a8e}{set\+Product\+Menu} (\hyperlink{classProductMenu}{Product\+Menu} $\ast$product\+Menu)
 \begin{DoxyCompactList}\small\item\em Sets product\+Menu. \end{DoxyCompactList}\item 
-\hyperlink{classShoppingMenu}{Shopping\+Menu} $\ast$ \hyperlink{classMainMenu_a59f7c25cfd99dc969de1b29acda75a9c}{get\+Shopping\+Menu} () const
+\hyperlink{classShoppingMenu}{Shopping\+Menu} $\ast$ \hyperlink{classMainMenu_aa85189f22902186d47c1610e9d92d911}{get\+Shopping\+Menu} () const 
 \begin{DoxyCompactList}\small\item\em Gets shopping\+Menu. \end{DoxyCompactList}\item 
 void \hyperlink{classMainMenu_ae8cab8d0e2430d34bad64ba238b4cc4d}{set\+Shopping\+Menu} (\hyperlink{classShoppingMenu}{Shopping\+Menu} $\ast$shopping\+Menu)
 \begin{DoxyCompactList}\small\item\em Sets shopping\+Menu. \end{DoxyCompactList}\item 
-\hyperlink{classCustomerMenu}{Customer\+Menu} $\ast$ \hyperlink{classMainMenu_a605159269deb516a64b77d9144750bbf}{get\+Customer\+Menu} () const
+\hyperlink{classCustomerMenu}{Customer\+Menu} $\ast$ \hyperlink{classMainMenu_ac8c258825449e5c4cc129004fb2e6589}{get\+Customer\+Menu} () const 
 \begin{DoxyCompactList}\small\item\em Gets customer\+Menu. \end{DoxyCompactList}\item 
 void \hyperlink{classMainMenu_a5c80f2e447ac6fca73b1527f9abd74b6}{set\+Customer\+Menu} (\hyperlink{classCustomerMenu}{Customer\+Menu} $\ast$customer\+Menu)
 \begin{DoxyCompactList}\small\item\em Sets customer\+Menu. \end{DoxyCompactList}\item 
@@ -54,12 +56,13 @@ void \hyperlink{classMainMenu_aabbf0c8aba7bc80316e150ea609e897f}{menu\+Switch} (
 \hyperlink{classMainMenu}{Main\+Menu} class inherits from menu class. 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classMainMenu_ac1e7ab45aeaf1245b7dd534e2a535ed8}\label{classMainMenu_ac1e7ab45aeaf1245b7dd534e2a535ed8}} 
 \index{Main\+Menu@{Main\+Menu}!get\+Customer\+List@{get\+Customer\+List}}
 \index{get\+Customer\+List@{get\+Customer\+List}!Main\+Menu@{Main\+Menu}}
-\subsubsection{\texorpdfstring{get\+Customer\+List()}{getCustomerList()}}
-{\footnotesize\ttfamily const vector$<$ \hyperlink{classCustomer}{Customer} $>$ \& Main\+Menu\+::get\+Customer\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
-
+\subsubsection[{\texorpdfstring{get\+Customer\+List() const }{getCustomerList() const }}]{\setlength{\rightskip}{0pt plus 5cm}const vector$<$ {\bf Customer} $>$ \& Main\+Menu\+::get\+Customer\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classMainMenu_a767a7b46b797999747042dbac8a7fa1b}{}\label{classMainMenu_a767a7b46b797999747042dbac8a7fa1b}
 
 
 Gets customer\+List. 
@@ -67,12 +70,13 @@ Gets customer\+List.
 \begin{DoxyReturn}{Returns}
 customer\+List a customer argument. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classMainMenu_a605159269deb516a64b77d9144750bbf}\label{classMainMenu_a605159269deb516a64b77d9144750bbf}} 
 \index{Main\+Menu@{Main\+Menu}!get\+Customer\+Menu@{get\+Customer\+Menu}}
 \index{get\+Customer\+Menu@{get\+Customer\+Menu}!Main\+Menu@{Main\+Menu}}
-\subsubsection{\texorpdfstring{get\+Customer\+Menu()}{getCustomerMenu()}}
-{\footnotesize\ttfamily \hyperlink{classCustomerMenu}{Customer\+Menu} $\ast$ Main\+Menu\+::get\+Customer\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
-
+\subsubsection[{\texorpdfstring{get\+Customer\+Menu() const }{getCustomerMenu() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Customer\+Menu} $\ast$ Main\+Menu\+::get\+Customer\+Menu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classMainMenu_ac8c258825449e5c4cc129004fb2e6589}{}\label{classMainMenu_ac8c258825449e5c4cc129004fb2e6589}
 
 
 Gets customer\+Menu. 
@@ -80,12 +84,13 @@ Gets customer\+Menu.
 \begin{DoxyReturn}{Returns}
 customer\+Menu a \hyperlink{classCustomerMenu}{Customer\+Menu} argument. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classMainMenu_ae122d42a6ffd8735c4abcd789473a4e9}\label{classMainMenu_ae122d42a6ffd8735c4abcd789473a4e9}} 
 \index{Main\+Menu@{Main\+Menu}!get\+Product\+List@{get\+Product\+List}}
 \index{get\+Product\+List@{get\+Product\+List}!Main\+Menu@{Main\+Menu}}
-\subsubsection{\texorpdfstring{get\+Product\+List()}{getProductList()}}
-{\footnotesize\ttfamily const vector$<$ \hyperlink{classProduct}{Product} $\ast$ $>$ \& Main\+Menu\+::get\+Product\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
-
+\subsubsection[{\texorpdfstring{get\+Product\+List() const }{getProductList() const }}]{\setlength{\rightskip}{0pt plus 5cm}const vector$<$ {\bf Product} $\ast$ $>$ \& Main\+Menu\+::get\+Product\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classMainMenu_af797940403e4861707ec38b49c3bb877}{}\label{classMainMenu_af797940403e4861707ec38b49c3bb877}
 
 
 Gets product\+List. 
@@ -93,12 +98,13 @@ Gets product\+List.
 \begin{DoxyReturn}{Returns}
 product\+List a \hyperlink{classProduct}{Product} argument. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classMainMenu_a96cf34491424fb414023b2ae6f64540b}\label{classMainMenu_a96cf34491424fb414023b2ae6f64540b}} 
 \index{Main\+Menu@{Main\+Menu}!get\+Product\+Menu@{get\+Product\+Menu}}
 \index{get\+Product\+Menu@{get\+Product\+Menu}!Main\+Menu@{Main\+Menu}}
-\subsubsection{\texorpdfstring{get\+Product\+Menu()}{getProductMenu()}}
-{\footnotesize\ttfamily \hyperlink{classProductMenu}{Product\+Menu} $\ast$ Main\+Menu\+::get\+Product\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
-
+\subsubsection[{\texorpdfstring{get\+Product\+Menu() const }{getProductMenu() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Product\+Menu} $\ast$ Main\+Menu\+::get\+Product\+Menu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classMainMenu_a6803aa733e52be3d4987aea068da1f61}{}\label{classMainMenu_a6803aa733e52be3d4987aea068da1f61}
 
 
 Gets product\+Menu. 
@@ -106,12 +112,13 @@ Gets product\+Menu.
 \begin{DoxyReturn}{Returns}
 product\+Menu a \hyperlink{classProductMenu}{Product\+Menu} argument. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classMainMenu_a59f7c25cfd99dc969de1b29acda75a9c}\label{classMainMenu_a59f7c25cfd99dc969de1b29acda75a9c}} 
 \index{Main\+Menu@{Main\+Menu}!get\+Shopping\+Menu@{get\+Shopping\+Menu}}
 \index{get\+Shopping\+Menu@{get\+Shopping\+Menu}!Main\+Menu@{Main\+Menu}}
-\subsubsection{\texorpdfstring{get\+Shopping\+Menu()}{getShoppingMenu()}}
-{\footnotesize\ttfamily \hyperlink{classShoppingMenu}{Shopping\+Menu} $\ast$ Main\+Menu\+::get\+Shopping\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
-
+\subsubsection[{\texorpdfstring{get\+Shopping\+Menu() const }{getShoppingMenu() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Shopping\+Menu} $\ast$ Main\+Menu\+::get\+Shopping\+Menu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classMainMenu_aa85189f22902186d47c1610e9d92d911}{}\label{classMainMenu_aa85189f22902186d47c1610e9d92d911}
 
 
 Gets shopping\+Menu. 
@@ -119,12 +126,13 @@ Gets shopping\+Menu.
 \begin{DoxyReturn}{Returns}
 shopping\+Menu a \hyperlink{classShoppingMenu}{Shopping\+Menu} argument. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classMainMenu_aabbf0c8aba7bc80316e150ea609e897f}\label{classMainMenu_aabbf0c8aba7bc80316e150ea609e897f}} 
 \index{Main\+Menu@{Main\+Menu}!menu\+Switch@{menu\+Switch}}
 \index{menu\+Switch@{menu\+Switch}!Main\+Menu@{Main\+Menu}}
-\subsubsection{\texorpdfstring{menu\+Switch()}{menuSwitch()}}
-{\footnotesize\ttfamily void Main\+Menu\+::menu\+Switch (\begin{DoxyParamCaption}\item[{int}]{menu\+Input }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
-
+\subsubsection[{\texorpdfstring{menu\+Switch(int)}{menuSwitch(int)}}]{\setlength{\rightskip}{0pt plus 5cm}void Main\+Menu\+::menu\+Switch (
+\begin{DoxyParamCaption}
+\item[{int}]{menu\+Input}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classMainMenu_aabbf0c8aba7bc80316e150ea609e897f}{}\label{classMainMenu_aabbf0c8aba7bc80316e150ea609e897f}
 
 
 Switchs to menu. 
@@ -138,12 +146,13 @@ Switchs to menu.
 
 Implements \hyperlink{classMenu_ae9d7af36b1a380e5e4b03ddbef9ceeca}{Menu}.
 
-\mbox{\Hypertarget{classMainMenu_aa78eaffbe8203475575aac6f330497c9}\label{classMainMenu_aa78eaffbe8203475575aac6f330497c9}} 
 \index{Main\+Menu@{Main\+Menu}!set\+Customer\+List@{set\+Customer\+List}}
 \index{set\+Customer\+List@{set\+Customer\+List}!Main\+Menu@{Main\+Menu}}
-\subsubsection{\texorpdfstring{set\+Customer\+List()}{setCustomerList()}}
-{\footnotesize\ttfamily void Main\+Menu\+::set\+Customer\+List (\begin{DoxyParamCaption}\item[{const vector$<$ \hyperlink{classCustomer}{Customer} $>$ \&}]{customer\+List }\end{DoxyParamCaption})}
-
+\subsubsection[{\texorpdfstring{set\+Customer\+List(const vector$<$ Customer $>$ \&customer\+List)}{setCustomerList(const vector< Customer > &customerList)}}]{\setlength{\rightskip}{0pt plus 5cm}void Main\+Menu\+::set\+Customer\+List (
+\begin{DoxyParamCaption}
+\item[{const vector$<$ {\bf Customer} $>$ \&}]{customer\+List}
+\end{DoxyParamCaption}
+)}\hypertarget{classMainMenu_aa78eaffbe8203475575aac6f330497c9}{}\label{classMainMenu_aa78eaffbe8203475575aac6f330497c9}
 
 
 Sets customer\+List. 
@@ -153,12 +162,13 @@ Sets customer\+List.
 {\em customer\+List} & a customer argument. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classMainMenu_a5c80f2e447ac6fca73b1527f9abd74b6}\label{classMainMenu_a5c80f2e447ac6fca73b1527f9abd74b6}} 
 \index{Main\+Menu@{Main\+Menu}!set\+Customer\+Menu@{set\+Customer\+Menu}}
 \index{set\+Customer\+Menu@{set\+Customer\+Menu}!Main\+Menu@{Main\+Menu}}
-\subsubsection{\texorpdfstring{set\+Customer\+Menu()}{setCustomerMenu()}}
-{\footnotesize\ttfamily void Main\+Menu\+::set\+Customer\+Menu (\begin{DoxyParamCaption}\item[{\hyperlink{classCustomerMenu}{Customer\+Menu} $\ast$}]{customer\+Menu }\end{DoxyParamCaption})}
-
+\subsubsection[{\texorpdfstring{set\+Customer\+Menu(\+Customer\+Menu $\ast$customer\+Menu)}{setCustomerMenu(CustomerMenu *customerMenu)}}]{\setlength{\rightskip}{0pt plus 5cm}void Main\+Menu\+::set\+Customer\+Menu (
+\begin{DoxyParamCaption}
+\item[{{\bf Customer\+Menu} $\ast$}]{customer\+Menu}
+\end{DoxyParamCaption}
+)}\hypertarget{classMainMenu_a5c80f2e447ac6fca73b1527f9abd74b6}{}\label{classMainMenu_a5c80f2e447ac6fca73b1527f9abd74b6}
 
 
 Sets customer\+Menu. 
@@ -168,12 +178,13 @@ Sets customer\+Menu.
 {\em customer\+Menu} & a \hyperlink{classCustomerMenu}{Customer\+Menu} argument. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classMainMenu_aae749e64ea9bf630ae4340a446bcf8a7}\label{classMainMenu_aae749e64ea9bf630ae4340a446bcf8a7}} 
 \index{Main\+Menu@{Main\+Menu}!set\+Product\+List@{set\+Product\+List}}
 \index{set\+Product\+List@{set\+Product\+List}!Main\+Menu@{Main\+Menu}}
-\subsubsection{\texorpdfstring{set\+Product\+List()}{setProductList()}}
-{\footnotesize\ttfamily void Main\+Menu\+::set\+Product\+List (\begin{DoxyParamCaption}\item[{const vector$<$ \hyperlink{classProduct}{Product} $\ast$$>$ \&}]{product\+List }\end{DoxyParamCaption})}
-
+\subsubsection[{\texorpdfstring{set\+Product\+List(const vector$<$ Product $\ast$ $>$ \&product\+List)}{setProductList(const vector< Product * > &productList)}}]{\setlength{\rightskip}{0pt plus 5cm}void Main\+Menu\+::set\+Product\+List (
+\begin{DoxyParamCaption}
+\item[{const vector$<$ {\bf Product} $\ast$ $>$ \&}]{product\+List}
+\end{DoxyParamCaption}
+)}\hypertarget{classMainMenu_a7e92c219fdadcfcf8d34d25d14ed90e0}{}\label{classMainMenu_a7e92c219fdadcfcf8d34d25d14ed90e0}
 
 
 Sets product\+List. 
@@ -183,12 +194,13 @@ Sets product\+List.
 {\em product\+List} & a \hyperlink{classProduct}{Product} argument. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classMainMenu_aaca12cbc08bfe9533544375cd8da5a8e}\label{classMainMenu_aaca12cbc08bfe9533544375cd8da5a8e}} 
 \index{Main\+Menu@{Main\+Menu}!set\+Product\+Menu@{set\+Product\+Menu}}
 \index{set\+Product\+Menu@{set\+Product\+Menu}!Main\+Menu@{Main\+Menu}}
-\subsubsection{\texorpdfstring{set\+Product\+Menu()}{setProductMenu()}}
-{\footnotesize\ttfamily void Main\+Menu\+::set\+Product\+Menu (\begin{DoxyParamCaption}\item[{\hyperlink{classProductMenu}{Product\+Menu} $\ast$}]{product\+Menu }\end{DoxyParamCaption})}
-
+\subsubsection[{\texorpdfstring{set\+Product\+Menu(\+Product\+Menu $\ast$product\+Menu)}{setProductMenu(ProductMenu *productMenu)}}]{\setlength{\rightskip}{0pt plus 5cm}void Main\+Menu\+::set\+Product\+Menu (
+\begin{DoxyParamCaption}
+\item[{{\bf Product\+Menu} $\ast$}]{product\+Menu}
+\end{DoxyParamCaption}
+)}\hypertarget{classMainMenu_aaca12cbc08bfe9533544375cd8da5a8e}{}\label{classMainMenu_aaca12cbc08bfe9533544375cd8da5a8e}
 
 
 Sets product\+Menu. 
@@ -198,12 +210,13 @@ Sets product\+Menu.
 {\em product\+Menu} & a \hyperlink{classProductMenu}{Product\+Menu} argument. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classMainMenu_ae8cab8d0e2430d34bad64ba238b4cc4d}\label{classMainMenu_ae8cab8d0e2430d34bad64ba238b4cc4d}} 
 \index{Main\+Menu@{Main\+Menu}!set\+Shopping\+Menu@{set\+Shopping\+Menu}}
 \index{set\+Shopping\+Menu@{set\+Shopping\+Menu}!Main\+Menu@{Main\+Menu}}
-\subsubsection{\texorpdfstring{set\+Shopping\+Menu()}{setShoppingMenu()}}
-{\footnotesize\ttfamily void Main\+Menu\+::set\+Shopping\+Menu (\begin{DoxyParamCaption}\item[{\hyperlink{classShoppingMenu}{Shopping\+Menu} $\ast$}]{shopping\+Menu }\end{DoxyParamCaption})}
-
+\subsubsection[{\texorpdfstring{set\+Shopping\+Menu(\+Shopping\+Menu $\ast$shopping\+Menu)}{setShoppingMenu(ShoppingMenu *shoppingMenu)}}]{\setlength{\rightskip}{0pt plus 5cm}void Main\+Menu\+::set\+Shopping\+Menu (
+\begin{DoxyParamCaption}
+\item[{{\bf Shopping\+Menu} $\ast$}]{shopping\+Menu}
+\end{DoxyParamCaption}
+)}\hypertarget{classMainMenu_ae8cab8d0e2430d34bad64ba238b4cc4d}{}\label{classMainMenu_ae8cab8d0e2430d34bad64ba238b4cc4d}
 
 
 Sets shopping\+Menu. 
@@ -216,12 +229,9 @@ Sets shopping\+Menu.
 
 
 \subsection{Member Data Documentation}
-\mbox{\Hypertarget{classMainMenu_a70561c3a6ca04aaa2d7a28d4b157a462}\label{classMainMenu_a70561c3a6ca04aaa2d7a28d4b157a462}} 
 \index{Main\+Menu@{Main\+Menu}!````~Main\+Menu@{$\sim$\+Main\+Menu}}
 \index{````~Main\+Menu@{$\sim$\+Main\+Menu}!Main\+Menu@{Main\+Menu}}
-\subsubsection{\texorpdfstring{$\sim$\+Main\+Menu}{~MainMenu}}
-{\footnotesize\ttfamily Main\+Menu\+::$\sim$\+Main\+Menu}
-
+\subsubsection[{\texorpdfstring{$\sim$\+Main\+Menu}{~MainMenu}}]{\setlength{\rightskip}{0pt plus 5cm}Main\+Menu\+::$\sim$\+Main\+Menu}\hypertarget{classMainMenu_a70561c3a6ca04aaa2d7a28d4b157a462}{}\label{classMainMenu_a70561c3a6ca04aaa2d7a28d4b157a462}
 
 
 Constructor with six arguments. 
