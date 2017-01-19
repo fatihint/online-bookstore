@@ -1,0 +1,18 @@
+\hypertarget{Book_8cpp}{}\section{Book.\+cpp File Reference}
+\label{Book_8cpp}\index{Book.\+cpp@{Book.\+cpp}}
+
+
+This file implements \hyperlink{classBook}{Book} class functions.  
+
+
+{\ttfamily \#include \char`\"{}Book.\+h\char`\"{}}\\*
+Include dependency graph for Book.\+cpp\+:
+% FIG 0
+
+
+\subsection{Detailed Description}
+This file implements \hyperlink{classBook}{Book} class functions. 
+
+eren (\href{mailto:karaeren042@gmail.com}{\tt karaeren042@gmail.\+com}) \begin{DoxyDate}{Date}
+December, 2016 
+\end{DoxyDate}

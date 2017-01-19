@@ -1,6 +1,9 @@
-//
-// Created by fatih on 25.12.2016.
-//
+/**
+ * @file ShoppingCart.cpp
+ * @Author fatih (fatihint@gmail.com)
+ * @date December, 2016
+ * @brief This file implements ShoppingCart class functions
+ */ 
 
 #include "ShoppingCart.h"
 #include "Check.h"
@@ -19,32 +22,60 @@ ShoppingCart::ShoppingCart(Customer* customer) {
     this->customer = customer;
     this->payment = payment;
 }
+/*!
+ 
+ \return payment a Payment argument.
 
+*/ 
 Payment* ShoppingCart::getPaymentMethod() const {
     return payment;
 }
-
+/*!
+ \param payment an Payment argument.
+ 
+ 
+*/
 void ShoppingCart::setPaymentMethod(Payment* payment) {
     this->payment = payment;
 }
+/*!
+ 
+ \return customer a Customer argument.
 
+*/ 
 Customer* ShoppingCart::getCustomer() const{
     return customer;
 }
-
+/*!
+ \param customer an Customer argument.
+ 
+ 
+*/
 void ShoppingCart::setCustomer(Customer* customer) {
     this->customer = customer;
 }
-
+/*!
+ \param BonusUsed an boolean argument.
+ 
+ 
+*/
 void ShoppingCart::setBonusUsed() {
     isBonusUsed = true;
 }
-
+/*!
+ \param p an Product argument.
+ \param n an integer argument.
+ 
+*/
 void ShoppingCart::addProduct(Product* p, int n) {
     ProductToPurchase *purchase = new ProductToPurchase(p,n);
     productToPurchase.push_back(purchase);
 }
-
+/*!
+ \param p an Product argument.
+ 
+ 
+*/
 void ShoppingCart::removeProduct(Product *p) {
     if(productToPurchase.size() == 0){
         cout << "Shopping Cart is empty !" << endl;
@@ -77,10 +108,20 @@ void ShoppingCart::printProducts() {
     }
 }
 
-string ShoppingCart::showInvoice() {
-    return "Name: " + getCustomer()->getName() + " - Adress: " + getCustomer()->getAdress() + " - Phone: " + getCustomer()->getPhone() + " - Email: " + getCustomer()->getEmail() + " - Payment: " + payment->paymentInfo();
+void ShoppingCart::showInvoice() {
+    cout << "Invoice " << endl;
+    cout << "Name: " << getCustomer()->getName();
+    cout << "Adress: " << getCustomer()->getAdress();
+    cout << "Phone: " << getCustomer()->getPhone();
+    cout << "Email: " << getCustomer()->getEmail();
+    cout << "Payment: ";
+    payment->performPayment();
 }
+/*!
+ 
+ \return i a integer argument.
 
+*/ 
 int ShoppingCart::getProductCount() {
     int i = 0;
     list<ProductToPurchase*>::iterator it;
@@ -89,8 +130,12 @@ int ShoppingCart::getProductCount() {
     }
     return i;
 }
+/*!
+ 
+ \return total a integer argument.
 
-double ShoppingCart::getTotalAmount() {
+*/ 
+int ShoppingCart::getTotalAmount() {
     double total = 0;
     list<ProductToPurchase*>::iterator it;
     for(it=productToPurchase.begin(); it!=productToPurchase.end(); it++){

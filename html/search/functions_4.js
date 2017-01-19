@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['payment',['Payment',['../classPayment.html#abe05f968db46b0211379eeee357ef58d',1,'Payment']]],
-  ['paymentinfo',['paymentInfo',['../classCash.html#a9d6c758ea4652022a016d5643119c7d2',1,'Cash::paymentInfo()'],['../classCheck.html#ab310ce98f6929d4a214c3d120824d2e4',1,'Check::paymentInfo()'],['../classCreditCard.html#af4933bd75406444c8e91d9090b297858',1,'CreditCard::paymentInfo()'],['../classPayment.html#ae3be1f239771fbe95b173a82e4b49543',1,'Payment::paymentInfo()']]],
-  ['performpayment',['performPayment',['../classCash.html#afcf1108ce8489fb731c0c18613f84183',1,'Cash::performPayment()'],['../classCheck.html#adace560cdb9f0faa151b82fe0deb5070',1,'Check::performPayment()'],['../classCreditCard.html#ad41ae39d73adea22555db100311a5101',1,'CreditCard::performPayment()'],['../classPayment.html#afc011ab4bc8dee83b184bdc056d4c2a9',1,'Payment::performPayment()']]],
-  ['printproperties',['printProperties',['../classMagazine.html#a64f61943072de7e5c608a52cf5ee86ac',1,'Magazine']]],
-  ['product',['Product',['../classProduct.html#aa7705364efa0a211575a00b5a6b8537c',1,'Product']]]
+  ['magazine',['Magazine',['../classMagazine.html#af32c7b2b56f8553579669f9f3200e2e7',1,'Magazine::Magazine(int, string, double, int, string)'],['../classMagazine.html#ad79b115f747f89d5f1cebe268a94e0cb',1,'Magazine::Magazine(int, string, double)']]],
+  ['menu',['Menu',['../classMenu.html#a3377fd5036a2f8f93eee473afd570185',1,'Menu::Menu(string title)'],['../classMenu.html#a28dcf937389ad94a178caef7b28a11a8',1,'Menu::Menu(string, string *, int)']]],
+  ['menuswitch',['menuSwitch',['../classCustomerMenu.html#a9c43057a2fdd5fa1323e4cc1ec54f4be',1,'CustomerMenu::menuSwitch()'],['../classMainMenu.html#aabbf0c8aba7bc80316e150ea609e897f',1,'MainMenu::menuSwitch()'],['../classMenu.html#ae9d7af36b1a380e5e4b03ddbef9ceeca',1,'Menu::menuSwitch()'],['../classProductMenu.html#a24a18c11760a828b7b7de4acc22bcce5',1,'ProductMenu::menuSwitch()'],['../classShoppingMenu.html#a2ae4f8b4fafbf970b454be146858c3d6',1,'ShoppingMenu::menuSwitch()']]],
+  ['musiccd',['MusicCD',['../classMusicCD.html#a334b0680f6901e6d4f34791aecf075fd',1,'MusicCD::MusicCD(int, string, double, string, string)'],['../classMusicCD.html#aecdf5af2b88efcd0f3e0d5722f0316d3',1,'MusicCD::MusicCD(int, string, double)']]]
 ];

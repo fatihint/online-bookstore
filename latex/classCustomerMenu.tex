@@ -9,21 +9,23 @@
 
 {\ttfamily \#include $<$Customer\+Menu.\+h$>$}
 
-Inheritance diagram for Customer\+Menu\+:\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[height=2.000000cm]{classCustomerMenu}
-\end{center}
-\end{figure}
+
+
+Inheritance diagram for Customer\+Menu\+:
+% FIG 0
+
+
+Collaboration diagram for Customer\+Menu\+:
+% FIG 1
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classCustomerMenu_a05bf66ccf5ce81d26cc4e39fbc2dbb64}\label{classCustomerMenu_a05bf66ccf5ce81d26cc4e39fbc2dbb64}} 
-\hyperlink{classCustomerMenu_a05bf66ccf5ce81d26cc4e39fbc2dbb64}{Customer\+Menu} (string title, string $\ast$subs, int size, vector$<$ \hyperlink{classCustomer}{Customer} $>$ c\+List)
+\hyperlink{classCustomerMenu_a05bf66ccf5ce81d26cc4e39fbc2dbb64}{Customer\+Menu} (string title, string $\ast$subs, int size, vector$<$ \hyperlink{classCustomer}{Customer} $>$ c\+List)\hypertarget{classCustomerMenu_a05bf66ccf5ce81d26cc4e39fbc2dbb64}{}\label{classCustomerMenu_a05bf66ccf5ce81d26cc4e39fbc2dbb64}
+
 \begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
 void \hyperlink{classCustomerMenu_abd785329cc569b15848388dd9e193613}{set\+Customer\+List} (const vector$<$ \hyperlink{classCustomer}{Customer} $>$ \&customer\+List)
 \begin{DoxyCompactList}\small\item\em Sets customer\+List. \end{DoxyCompactList}\item 
-const vector$<$ \hyperlink{classCustomer}{Customer} $>$ \& \hyperlink{classCustomerMenu_a633a6392060ef6e6bdb94ea6d554429c}{get\+Customer\+List} () const
+const vector$<$ \hyperlink{classCustomer}{Customer} $>$ \& \hyperlink{classCustomerMenu_a76d1f3b2b06c19ed15505c57c58564b4}{get\+Customer\+List} () const 
 \begin{DoxyCompactList}\small\item\em Gets customer\+List. \end{DoxyCompactList}\item 
 \hyperlink{classCustomerMenu_aa28a689d645c7df53e2d714195fcf08e}{$\sim$\+Customer\+Menu} ()
 \begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
@@ -38,12 +40,13 @@ void \hyperlink{classCustomerMenu_a9c43057a2fdd5fa1323e4cc1ec54f4be}{menu\+Switc
 \hyperlink{classCustomerMenu}{Customer\+Menu} class inherits from menu class. 
 
 \subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classCustomerMenu_aa28a689d645c7df53e2d714195fcf08e}\label{classCustomerMenu_aa28a689d645c7df53e2d714195fcf08e}} 
 \index{Customer\+Menu@{Customer\+Menu}!````~Customer\+Menu@{$\sim$\+Customer\+Menu}}
 \index{````~Customer\+Menu@{$\sim$\+Customer\+Menu}!Customer\+Menu@{Customer\+Menu}}
-\subsubsection{\texorpdfstring{$\sim$\+Customer\+Menu()}{~CustomerMenu()}}
-{\footnotesize\ttfamily Customer\+Menu\+::$\sim$\+Customer\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
+\subsubsection[{\texorpdfstring{$\sim$\+Customer\+Menu()}{~CustomerMenu()}}]{\setlength{\rightskip}{0pt plus 5cm}Customer\+Menu\+::$\sim$\+Customer\+Menu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classCustomerMenu_aa28a689d645c7df53e2d714195fcf08e}{}\label{classCustomerMenu_aa28a689d645c7df53e2d714195fcf08e}
 
 
 Destructor. 
@@ -51,12 +54,13 @@ Destructor.
 \hyperlink{classCustomerMenu}{Customer\+Menu} class. 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classCustomerMenu_a633a6392060ef6e6bdb94ea6d554429c}\label{classCustomerMenu_a633a6392060ef6e6bdb94ea6d554429c}} 
 \index{Customer\+Menu@{Customer\+Menu}!get\+Customer\+List@{get\+Customer\+List}}
 \index{get\+Customer\+List@{get\+Customer\+List}!Customer\+Menu@{Customer\+Menu}}
-\subsubsection{\texorpdfstring{get\+Customer\+List()}{getCustomerList()}}
-{\footnotesize\ttfamily const vector$<$ \hyperlink{classCustomer}{Customer} $>$ \& Customer\+Menu\+::get\+Customer\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
-
+\subsubsection[{\texorpdfstring{get\+Customer\+List() const }{getCustomerList() const }}]{\setlength{\rightskip}{0pt plus 5cm}const vector$<$ {\bf Customer} $>$ \& Customer\+Menu\+::get\+Customer\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classCustomerMenu_a76d1f3b2b06c19ed15505c57c58564b4}{}\label{classCustomerMenu_a76d1f3b2b06c19ed15505c57c58564b4}
 
 
 Gets customer\+List. 
@@ -64,12 +68,13 @@ Gets customer\+List.
 \begin{DoxyReturn}{Returns}
 customer\+List a customer argument. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classCustomerMenu_a9c43057a2fdd5fa1323e4cc1ec54f4be}\label{classCustomerMenu_a9c43057a2fdd5fa1323e4cc1ec54f4be}} 
 \index{Customer\+Menu@{Customer\+Menu}!menu\+Switch@{menu\+Switch}}
 \index{menu\+Switch@{menu\+Switch}!Customer\+Menu@{Customer\+Menu}}
-\subsubsection{\texorpdfstring{menu\+Switch()}{menuSwitch()}}
-{\footnotesize\ttfamily void Customer\+Menu\+::menu\+Switch (\begin{DoxyParamCaption}\item[{int}]{menu\+Input }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
-
+\subsubsection[{\texorpdfstring{menu\+Switch(int)}{menuSwitch(int)}}]{\setlength{\rightskip}{0pt plus 5cm}void Customer\+Menu\+::menu\+Switch (
+\begin{DoxyParamCaption}
+\item[{int}]{menu\+Input}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classCustomerMenu_a9c43057a2fdd5fa1323e4cc1ec54f4be}{}\label{classCustomerMenu_a9c43057a2fdd5fa1323e4cc1ec54f4be}
 
 
 Switchs menu by input. 
@@ -83,12 +88,13 @@ Switchs menu by input.
 
 Implements \hyperlink{classMenu_ae9d7af36b1a380e5e4b03ddbef9ceeca}{Menu}.
 
-\mbox{\Hypertarget{classCustomerMenu_abd785329cc569b15848388dd9e193613}\label{classCustomerMenu_abd785329cc569b15848388dd9e193613}} 
 \index{Customer\+Menu@{Customer\+Menu}!set\+Customer\+List@{set\+Customer\+List}}
 \index{set\+Customer\+List@{set\+Customer\+List}!Customer\+Menu@{Customer\+Menu}}
-\subsubsection{\texorpdfstring{set\+Customer\+List()}{setCustomerList()}}
-{\footnotesize\ttfamily void Customer\+Menu\+::set\+Customer\+List (\begin{DoxyParamCaption}\item[{const vector$<$ \hyperlink{classCustomer}{Customer} $>$ \&}]{customer\+List }\end{DoxyParamCaption})}
-
+\subsubsection[{\texorpdfstring{set\+Customer\+List(const vector$<$ Customer $>$ \&customer\+List)}{setCustomerList(const vector< Customer > &customerList)}}]{\setlength{\rightskip}{0pt plus 5cm}void Customer\+Menu\+::set\+Customer\+List (
+\begin{DoxyParamCaption}
+\item[{const vector$<$ {\bf Customer} $>$ \&}]{customer\+List}
+\end{DoxyParamCaption}
+)}\hypertarget{classCustomerMenu_abd785329cc569b15848388dd9e193613}{}\label{classCustomerMenu_abd785329cc569b15848388dd9e193613}
 
 
 Sets customer\+List. 

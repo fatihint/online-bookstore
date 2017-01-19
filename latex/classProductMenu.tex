@@ -1,30 +1,125 @@
 \hypertarget{classProductMenu}{}\section{Product\+Menu Class Reference}
 \label{classProductMenu}\index{Product\+Menu@{Product\+Menu}}
-Inheritance diagram for Product\+Menu\+:\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[height=2.000000cm]{classProductMenu}
-\end{center}
-\end{figure}
+
+
+\hyperlink{classProductMenu}{Product\+Menu} class.  
+
+
+
+
+{\ttfamily \#include $<$Product\+Menu.\+h$>$}
+
+
+
+Inheritance diagram for Product\+Menu\+:
+% FIG 0
+
+
+Collaboration diagram for Product\+Menu\+:
+% FIG 1
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classProductMenu_a82b4acc7ccba704e2a54d3259b361230}\label{classProductMenu_a82b4acc7ccba704e2a54d3259b361230}} 
-{\bfseries Product\+Menu} (string title, string $\ast$subs, int size, vector$<$ \hyperlink{classProduct}{Product} $\ast$$>$ p\+List)
+\hyperlink{classProductMenu_a3983fa9a21b0fdee2165ecee63c65789}{Product\+Menu} (string title, string $\ast$subs, int size, vector$<$ \hyperlink{classProduct}{Product} $\ast$ $>$ p\+List)
 \item 
-\mbox{\Hypertarget{classProductMenu_a0f8a319dae390c983d728219cf845aef}\label{classProductMenu_a0f8a319dae390c983d728219cf845aef}} 
-const vector$<$ \hyperlink{classProduct}{Product} $\ast$ $>$ \& {\bfseries get\+Product\+List} () const
+const vector$<$ \hyperlink{classProduct}{Product} $\ast$ $>$ \& \hyperlink{classProductMenu_a4f0609d8e1adaf479e339b11ff81becd}{get\+Product\+List} () const 
 \item 
-\mbox{\Hypertarget{classProductMenu_a4aaea1df5f79ec3d744c1810a6ab03e2}\label{classProductMenu_a4aaea1df5f79ec3d744c1810a6ab03e2}} 
-void {\bfseries set\+Product\+List} (const vector$<$ \hyperlink{classProduct}{Product} $\ast$$>$ \&product\+List)
+void \hyperlink{classProductMenu_a2c7a0b496eba98d6aa26fcc0772a1fff}{set\+Product\+List} (const vector$<$ \hyperlink{classProduct}{Product} $\ast$ $>$ \&product\+List)
 \item 
-\mbox{\Hypertarget{classProductMenu_a24a18c11760a828b7b7de4acc22bcce5}\label{classProductMenu_a24a18c11760a828b7b7de4acc22bcce5}} 
+\hyperlink{classProductMenu_aaf9c9ffabcacddc2d76319845077186d}{$\sim$\+Product\+Menu} ()
+\item 
 void \hyperlink{classProductMenu_a24a18c11760a828b7b7de4acc22bcce5}{menu\+Switch} (int)
-\begin{DoxyCompactList}\small\item\em Switchs to menu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em $\ast$\+Show Items menu by input \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{classProductMenu}{Product\+Menu} class. 
+
+\hyperlink{classProductMenu}{Product\+Menu} class inherits from \hyperlink{classMenu}{Menu} class. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Product\+Menu@{Product\+Menu}!Product\+Menu@{Product\+Menu}}
+\index{Product\+Menu@{Product\+Menu}!Product\+Menu@{Product\+Menu}}
+\subsubsection[{\texorpdfstring{Product\+Menu(string title, string $\ast$subs, int size, vector$<$ Product $\ast$ $>$ p\+List)}{ProductMenu(string title, string *subs, int size, vector< Product * > pList)}}]{\setlength{\rightskip}{0pt plus 5cm}Product\+Menu\+::\+Product\+Menu (
+\begin{DoxyParamCaption}
+\item[{string}]{title, }
+\item[{string $\ast$}]{subs, }
+\item[{int}]{size, }
+\item[{vector$<$ {\bf Product} $\ast$ $>$}]{p\+List}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classProductMenu_a3983fa9a21b0fdee2165ecee63c65789}{}\label{classProductMenu_a3983fa9a21b0fdee2165ecee63c65789}
+
+\begin{DoxyItemize}
+\item Constructor function with four parameters. 
+\end{DoxyItemize}\index{Product\+Menu@{Product\+Menu}!````~Product\+Menu@{$\sim$\+Product\+Menu}}
+\index{````~Product\+Menu@{$\sim$\+Product\+Menu}!Product\+Menu@{Product\+Menu}}
+\subsubsection[{\texorpdfstring{$\sim$\+Product\+Menu()}{~ProductMenu()}}]{\setlength{\rightskip}{0pt plus 5cm}Product\+Menu\+::$\sim$\+Product\+Menu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classProductMenu_aaf9c9ffabcacddc2d76319845077186d}{}\label{classProductMenu_aaf9c9ffabcacddc2d76319845077186d}
+
+\begin{DoxyItemize}
+\item Destructor. 
+\end{DoxyItemize}
+
+\subsection{Member Function Documentation}
+\index{Product\+Menu@{Product\+Menu}!get\+Product\+List@{get\+Product\+List}}
+\index{get\+Product\+List@{get\+Product\+List}!Product\+Menu@{Product\+Menu}}
+\subsubsection[{\texorpdfstring{get\+Product\+List() const }{getProductList() const }}]{\setlength{\rightskip}{0pt plus 5cm}const vector$<$ {\bf Product} $\ast$ $>$ \& Product\+Menu\+::get\+Product\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classProductMenu_a4f0609d8e1adaf479e339b11ff81becd}{}\label{classProductMenu_a4f0609d8e1adaf479e339b11ff81becd}
+
+\begin{DoxyItemize}
+\item gets Product\+List property of object.
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+product\+List a \hyperlink{classProduct}{Product} argument. 
+\end{DoxyReturn}
+\index{Product\+Menu@{Product\+Menu}!menu\+Switch@{menu\+Switch}}
+\index{menu\+Switch@{menu\+Switch}!Product\+Menu@{Product\+Menu}}
+\subsubsection[{\texorpdfstring{menu\+Switch(int)}{menuSwitch(int)}}]{\setlength{\rightskip}{0pt plus 5cm}void Product\+Menu\+::menu\+Switch (
+\begin{DoxyParamCaption}
+\item[{int}]{menu\+Input}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classProductMenu_a24a18c11760a828b7b7de4acc22bcce5}{}\label{classProductMenu_a24a18c11760a828b7b7de4acc22bcce5}
+
+
+$\ast$\+Show Items menu by input 
+
+
+\begin{DoxyParams}{Parameters}
+{\em menu\+Input} & an int argument. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classMenu_ae9d7af36b1a380e5e4b03ddbef9ceeca}{Menu}.
+
+\index{Product\+Menu@{Product\+Menu}!set\+Product\+List@{set\+Product\+List}}
+\index{set\+Product\+List@{set\+Product\+List}!Product\+Menu@{Product\+Menu}}
+\subsubsection[{\texorpdfstring{set\+Product\+List(const vector$<$ Product $\ast$ $>$ \&product\+List)}{setProductList(const vector< Product * > &productList)}}]{\setlength{\rightskip}{0pt plus 5cm}void Product\+Menu\+::set\+Product\+List (
+\begin{DoxyParamCaption}
+\item[{const vector$<$ {\bf Product} $\ast$ $>$ \&}]{product\+List}
+\end{DoxyParamCaption}
+)}\hypertarget{classProductMenu_a2c7a0b496eba98d6aa26fcc0772a1fff}{}\label{classProductMenu_a2c7a0b496eba98d6aa26fcc0772a1fff}
+
+\begin{DoxyItemize}
+\item Sets Exp\+Date property of object to given argument.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em product\+List} & an \hyperlink{classProduct}{Product} argument. \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Product\+Menu.\+h\item 
-Product\+Menu.\+cpp\end{DoxyCompactItemize}
+\hyperlink{ProductMenu_8h}{Product\+Menu.\+h}\item 
+\hyperlink{ProductMenu_8cpp}{Product\+Menu.\+cpp}\end{DoxyCompactItemize}
