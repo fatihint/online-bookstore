@@ -1,27 +1,40 @@
-/*
- * Check.cpp
- *
- *  Created on: Dec 24, 2016
- *      Author: eren
- */
-
+/**
+ * @file Check.cpp
+ * @Author eren (karaeren042@gmail.com)
+ * @date December, 2016
+ * @brief This file implements Check class functions
+ */ 
 #include <queue>
-#include <iomanip>
 #include "Check.h"
+/*!
+ 
+ \return Name	a string argument.
+
+*/ 
 
 string Check::getName() const{
 	return name;
 }
-
-void Check::setName(string name){
+/*!
+ \param Name an string argument.
+ 
+*/ 
+void Check::setName(string){
 	this->name=name;
 }
+/*!
+ 
+ \return BankID	a string argument.
 
+*/ 
 string Check::getBankID() const {
 	return bankID;
 }
-
-void Check::setBankID(string bankID){
+/*!
+ \param BankID an string argument.
+ 
+*/ 
+void Check::setBankID(string){
 	this->bankID=bankID;
 }
 
@@ -39,21 +52,11 @@ Check::Check(double amount) : Payment(amount){
 }
 
 void Check::performPayment() {
-	string _name;
-	string bankId;
-
-	cout << "Enter the Name for Check: ";
-	cin.ignore();
-	getline(cin,_name);
-	cout << "Enter the Bank ID for Check: ";
-	getline(cin,bankId);
-	setName(_name);
-	setBankID(bankId);
-	cout << setprecision(5) << getAmount() << " TL is paid as Check in the name of '" << name << "' with '" << bankID << "' ID " << endl;
+ cout << getAmount() << "is paid as Check." << endl;
 }
 
 string Check::paymentInfo() {
-	string info = to_string(getAmount()) + " TL is paid as Check. \n";
+	string info = to_string(getAmount()) + " TL is paid as Credit Card. \n";
 	return info;
 }
 

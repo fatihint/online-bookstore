@@ -1,6 +1,10 @@
-//
-// Created by fatih on 29.12.2016.
-//
+/**
+ * @file BookStoreTestMain.cpp
+ * @Author fatih (fatihint@gmail.com)
+ * @date December, 2016
+ * @brief This file implements BookStoreTestMain class functions
+ */
+
 
 #include <iostream>
 #include <vector>

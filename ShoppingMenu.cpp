@@ -1,16 +1,20 @@
-//
-// Created by fatih on 29.12.2016.
-//
-
+/**
+ * @file ShoppingMenu.cpp
+ * @Author fatih (fatihint@gmail.com)
+ * @date December, 2016
+ * @brief This file implements ShoppingMenu class functions
+ */ 
 #include "ShoppingMenu.h"
-#include "ShoppingCart.h"
-#include "Cash.h"
-#include "CreditCard.h"
 #include "Check.h"
+#include "CreditCard.h"
+#include "Cash.h"
 
 ShoppingMenu::~ShoppingMenu() {
 
 }
+/*!
+ \param menuSwitch an integer argument.
+*/
 
 void ShoppingMenu::menuSwitch(int menuInput) {
     int itemNumber = 0,flag = 1;
@@ -264,19 +268,29 @@ void ShoppingMenu::menuSwitch(int menuInput) {
             break;
     }
 }
-
+/*!
+ \return pList a vector<Product*> argument.
+*/
 const vector<Product *> &ShoppingMenu::getProductList() const {
     return pList;
 }
-
+/*!
+ \param productList an vector<Product*> argument.
+*/
 void ShoppingMenu::setProductList(const vector<Product *> &productList) {
     ShoppingMenu::pList = productList;
 }
+/*!
+ 
+ \return cList a vector<Customer> argument.
 
+*/ 
 const vector<Customer> &ShoppingMenu::getCustomerList() const {
     return cList;
 }
-
+/*!
+ \param customerList a vector<Customer> argument.
+*/
 void ShoppingMenu::setCustomerList(const vector<Customer> &customerList) {
     ShoppingMenu::cList = customerList;
 }

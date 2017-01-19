@@ -1,0 +1,138 @@
+\hypertarget{classMenu}{}\section{Menu Class Reference}
+\label{classMenu}\index{Menu@{Menu}}
+
+
+\hyperlink{classMenu}{Menu} class.  
+
+
+
+
+{\ttfamily \#include $<$Menu.\+h$>$}
+
+
+
+Inheritance diagram for Menu\+:
+% FIG 0
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMenu_a3377fd5036a2f8f93eee473afd570185}{Menu} (string title)\hypertarget{classMenu_a3377fd5036a2f8f93eee473afd570185}{}\label{classMenu_a3377fd5036a2f8f93eee473afd570185}
+
+\begin{DoxyCompactList}\small\item\em Constructor with one arguments. \end{DoxyCompactList}\item 
+\hyperlink{classMenu_a28dcf937389ad94a178caef7b28a11a8}{Menu} (string, string $\ast$, int)
+\begin{DoxyCompactList}\small\item\em Constructor with three arguments. \end{DoxyCompactList}\item 
+\hyperlink{classMenu_a831387f51358cfb88cd018e1777bc980}{$\sim$\+Menu} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{classMenu_a2be45a29dd0fa643d5fc118350bce944}{add} (string $\ast$, int)
+\begin{DoxyCompactList}\small\item\em Adds submenu. \end{DoxyCompactList}\item 
+void \hyperlink{classMenu_a5423c0d700c20bf8bdd0fb1dbf0c0f6f}{add} (string)
+\begin{DoxyCompactList}\small\item\em Adds submenu. \end{DoxyCompactList}\item 
+int \hyperlink{classMenu_a346009151f57e18ffe0fa5a9dd89b1d6}{show} ()
+\begin{DoxyCompactList}\small\item\em Shows submenus. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classMenu_ae9d7af36b1a380e5e4b03ddbef9ceeca}{menu\+Switch} (int)=0\hypertarget{classMenu_ae9d7af36b1a380e5e4b03ddbef9ceeca}{}\label{classMenu_ae9d7af36b1a380e5e4b03ddbef9ceeca}
+
+\begin{DoxyCompactList}\small\item\em Switchs to menu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string {\bfseries title}\hypertarget{classMenu_a0edddfda0319fc24d00ca6ed610ea59b}{}\label{classMenu_a0edddfda0319fc24d00ca6ed610ea59b}
+
+\item 
+vector$<$ string $>$ {\bfseries sub\+Menus}\hypertarget{classMenu_acfa8e5e2ebe7e383c2ea38c74be347c0}{}\label{classMenu_acfa8e5e2ebe7e383c2ea38c74be347c0}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classMenu}{Menu} class. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Menu@{Menu}!Menu@{Menu}}
+\index{Menu@{Menu}!Menu@{Menu}}
+\subsubsection[{\texorpdfstring{Menu(string, string $\ast$, int)}{Menu(string, string *, int)}}]{\setlength{\rightskip}{0pt plus 5cm}Menu\+::\+Menu (
+\begin{DoxyParamCaption}
+\item[{string}]{, }
+\item[{string $\ast$}]{submenuarray, }
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)}\hypertarget{classMenu_a28dcf937389ad94a178caef7b28a11a8}{}\label{classMenu_a28dcf937389ad94a178caef7b28a11a8}
+
+
+Constructor with three arguments. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & a string argument. \\
+\hline
+{\em submenuarray} & a string argument. \\
+\hline
+{\em size} & an integer argument. \\
+\hline
+\end{DoxyParams}
+\index{Menu@{Menu}!````~Menu@{$\sim$\+Menu}}
+\index{````~Menu@{$\sim$\+Menu}!Menu@{Menu}}
+\subsubsection[{\texorpdfstring{$\sim$\+Menu()}{~Menu()}}]{\setlength{\rightskip}{0pt plus 5cm}Menu\+::$\sim$\+Menu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classMenu_a831387f51358cfb88cd018e1777bc980}{}\label{classMenu_a831387f51358cfb88cd018e1777bc980}
+
+
+Destructor. 
+
+\hyperlink{classMenu}{Menu} class. 
+
+\subsection{Member Function Documentation}
+\index{Menu@{Menu}!add@{add}}
+\index{add@{add}!Menu@{Menu}}
+\subsubsection[{\texorpdfstring{add(string $\ast$, int)}{add(string *, int)}}]{\setlength{\rightskip}{0pt plus 5cm}void Menu\+::add (
+\begin{DoxyParamCaption}
+\item[{string $\ast$}]{submenuarray, }
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)}\hypertarget{classMenu_a2be45a29dd0fa643d5fc118350bce944}{}\label{classMenu_a2be45a29dd0fa643d5fc118350bce944}
+
+
+Adds submenu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em submenuarray} & a string argument. \\
+\hline
+\end{DoxyParams}
+\index{Menu@{Menu}!add@{add}}
+\index{add@{add}!Menu@{Menu}}
+\subsubsection[{\texorpdfstring{add(string)}{add(string)}}]{\setlength{\rightskip}{0pt plus 5cm}void Menu\+::add (
+\begin{DoxyParamCaption}
+\item[{string}]{submenu}
+\end{DoxyParamCaption}
+)}\hypertarget{classMenu_a5423c0d700c20bf8bdd0fb1dbf0c0f6f}{}\label{classMenu_a5423c0d700c20bf8bdd0fb1dbf0c0f6f}
+
+
+Adds submenu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em submenu} & a string argument. \\
+\hline
+\end{DoxyParams}
+\index{Menu@{Menu}!show@{show}}
+\index{show@{show}!Menu@{Menu}}
+\subsubsection[{\texorpdfstring{show()}{show()}}]{\setlength{\rightskip}{0pt plus 5cm}int Menu\+::show (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classMenu_a346009151f57e18ffe0fa5a9dd89b1d6}{}\label{classMenu_a346009151f57e18ffe0fa5a9dd89b1d6}
+
+
+Shows submenus. 
+
+\begin{DoxyReturn}{Returns}
+menu\+Input an integer argument. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Menu.\+h\item 
+Menu.\+cpp\end{DoxyCompactItemize}

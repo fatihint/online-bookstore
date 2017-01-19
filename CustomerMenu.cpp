@@ -1,13 +1,16 @@
-//
-// Created by fatih on 29.12.2016.
-//
-
+/*
+ * @file  CustomerMenu.cpp
+ * @Author fatih
+ * @time 29 Ara 2016
+ * @brief this file implements customerMenu class functions.
+ */
+ //! CustomerMenu class.
 #include "CustomerMenu.h"
 
 CustomerMenu::~CustomerMenu() {
 
 }
-
+//! \param menuInput an integer argument.
 void CustomerMenu::menuSwitch(int menuInput) {
     Customer* c;
     string name = "",address = "",username = "",password = "",email = "",phone = "";
@@ -65,11 +68,11 @@ void CustomerMenu::menuSwitch(int menuInput) {
             break;
     }
 }
-
+//! \return customerList a customer argument.
 const vector<Customer> &CustomerMenu::getCustomerList() const {
     return customerList;
 }
-
+//! \param customerList a customer argument.
 void CustomerMenu::setCustomerList(const vector<Customer> &customerList) {
     CustomerMenu::customerList = customerList;
 }

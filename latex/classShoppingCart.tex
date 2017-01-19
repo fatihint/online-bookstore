@@ -1,0 +1,255 @@
+\hypertarget{classShoppingCart}{}\section{Shopping\+Cart Class Reference}
+\label{classShoppingCart}\index{Shopping\+Cart@{Shopping\+Cart}}
+
+
+\hyperlink{classShoppingCart}{Shopping\+Cart} class.  
+
+
+
+
+{\ttfamily \#include $<$Shopping\+Cart.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classShoppingCart_aa499286a2d3e4fcea8ee97a15f6d54c0}{Shopping\+Cart} ()
+\item 
+\hyperlink{classShoppingCart_af7a004471b1321cd7ee3b725be7bc7d7}{Shopping\+Cart} (\hyperlink{classCustomer}{Customer} $\ast$)
+\item 
+\hyperlink{classShoppingCart_a9a042afb412e560720b74920f5fac50a}{$\sim$\+Shopping\+Cart} ()
+\item 
+\hyperlink{classPayment}{Payment} $\ast$ \hyperlink{classShoppingCart_ada58cd717f897b9f3c1a2e042674a26b}{get\+Payment\+Method} () const 
+\item 
+void \hyperlink{classShoppingCart_a1648a74b6b51553740a964d39732f62a}{set\+Payment\+Method} (\hyperlink{classPayment}{Payment} $\ast$)
+\item 
+\hyperlink{classCustomer}{Customer} $\ast$ \hyperlink{classShoppingCart_a765e303006757a4e01ad2c6729afca9a}{get\+Customer} () const 
+\item 
+void \hyperlink{classShoppingCart_afa31abf8f6244304419f4e6caf3b109c}{set\+Customer} (\hyperlink{classCustomer}{Customer} $\ast$)
+\item 
+void \hyperlink{classShoppingCart_a2ed167d69492c61daf08754b4e3f99cf}{set\+Bonus\+Used} ()
+\item 
+void \hyperlink{classShoppingCart_afcab6367adfc0be9e37dd037a43b4ce2}{add\+Product} (\hyperlink{classProduct}{Product} $\ast$, int)
+\item 
+void \hyperlink{classShoppingCart_ad82371a6788905b99e6a03e3cd359242}{remove\+Product} (\hyperlink{classProduct}{Product} $\ast$)
+\begin{DoxyCompactList}\small\item\em $\ast$\+Only your choice product is removed in order. \end{DoxyCompactList}\item 
+void \hyperlink{classShoppingCart_af02e91c37822093ea7d8a2d63e8601a4}{place\+Order} ()\hypertarget{classShoppingCart_af02e91c37822093ea7d8a2d63e8601a4}{}\label{classShoppingCart_af02e91c37822093ea7d8a2d63e8601a4}
+
+\begin{DoxyCompactList}\small\item\em $\ast$you want products given order \end{DoxyCompactList}\item 
+void \hyperlink{classShoppingCart_a5c0c28d996ac9eba943ec6086065d958}{cancel\+Order} ()\hypertarget{classShoppingCart_a5c0c28d996ac9eba943ec6086065d958}{}\label{classShoppingCart_a5c0c28d996ac9eba943ec6086065d958}
+
+\begin{DoxyCompactList}\small\item\em $\ast$you want products Order to cancel \end{DoxyCompactList}\item 
+void \hyperlink{classShoppingCart_a157942fdeff8e09c48bbd745ab3cf1e4}{print\+Products} ()
+\item 
+void \hyperlink{classShoppingCart_a92667291083cd79d8d6c79da851c10e8}{show\+Invoice} ()
+\item 
+int \hyperlink{classShoppingCart_a13e1f55af8258d1beb8d343e1df7bf20}{get\+Product\+Count} ()
+\item 
+int \hyperlink{classShoppingCart_aa736b231f701ba9011470fd545f7031b}{get\+Total\+Amount} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classShoppingCart}{Shopping\+Cart} class. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Shopping\+Cart@{Shopping\+Cart}!Shopping\+Cart@{Shopping\+Cart}}
+\index{Shopping\+Cart@{Shopping\+Cart}!Shopping\+Cart@{Shopping\+Cart}}
+\subsubsection[{\texorpdfstring{Shopping\+Cart()}{ShoppingCart()}}]{\setlength{\rightskip}{0pt plus 5cm}Shopping\+Cart\+::\+Shopping\+Cart (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classShoppingCart_aa499286a2d3e4fcea8ee97a15f6d54c0}{}\label{classShoppingCart_aa499286a2d3e4fcea8ee97a15f6d54c0}
+
+\begin{DoxyItemize}
+\item Constructor 
+\end{DoxyItemize}\index{Shopping\+Cart@{Shopping\+Cart}!Shopping\+Cart@{Shopping\+Cart}}
+\index{Shopping\+Cart@{Shopping\+Cart}!Shopping\+Cart@{Shopping\+Cart}}
+\subsubsection[{\texorpdfstring{Shopping\+Cart(\+Customer $\ast$)}{ShoppingCart(Customer *)}}]{\setlength{\rightskip}{0pt plus 5cm}Shopping\+Cart\+::\+Shopping\+Cart (
+\begin{DoxyParamCaption}
+\item[{{\bf Customer} $\ast$}]{customer}
+\end{DoxyParamCaption}
+)}\hypertarget{classShoppingCart_af7a004471b1321cd7ee3b725be7bc7d7}{}\label{classShoppingCart_af7a004471b1321cd7ee3b725be7bc7d7}
+
+\begin{DoxyItemize}
+\item Constructor function with two parameters. 
+\end{DoxyItemize}\index{Shopping\+Cart@{Shopping\+Cart}!````~Shopping\+Cart@{$\sim$\+Shopping\+Cart}}
+\index{````~Shopping\+Cart@{$\sim$\+Shopping\+Cart}!Shopping\+Cart@{Shopping\+Cart}}
+\subsubsection[{\texorpdfstring{$\sim$\+Shopping\+Cart()}{~ShoppingCart()}}]{\setlength{\rightskip}{0pt plus 5cm}Shopping\+Cart\+::$\sim$\+Shopping\+Cart (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classShoppingCart_a9a042afb412e560720b74920f5fac50a}{}\label{classShoppingCart_a9a042afb412e560720b74920f5fac50a}
+
+\begin{DoxyItemize}
+\item Destructor . 
+\end{DoxyItemize}
+
+\subsection{Member Function Documentation}
+\index{Shopping\+Cart@{Shopping\+Cart}!add\+Product@{add\+Product}}
+\index{add\+Product@{add\+Product}!Shopping\+Cart@{Shopping\+Cart}}
+\subsubsection[{\texorpdfstring{add\+Product(\+Product $\ast$, int)}{addProduct(Product *, int)}}]{\setlength{\rightskip}{0pt plus 5cm}void Shopping\+Cart\+::add\+Product (
+\begin{DoxyParamCaption}
+\item[{{\bf Product} $\ast$}]{p, }
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}\hypertarget{classShoppingCart_afcab6367adfc0be9e37dd037a43b4ce2}{}\label{classShoppingCart_afcab6367adfc0be9e37dd037a43b4ce2}
+
+\begin{DoxyItemize}
+\item New purchase push into \hyperlink{classProductToPurchase}{Product\+To\+Purchase}.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & an \hyperlink{classProduct}{Product} argument. \\
+\hline
+{\em n} & an integer argument. \\
+\hline
+\end{DoxyParams}
+\index{Shopping\+Cart@{Shopping\+Cart}!get\+Customer@{get\+Customer}}
+\index{get\+Customer@{get\+Customer}!Shopping\+Cart@{Shopping\+Cart}}
+\subsubsection[{\texorpdfstring{get\+Customer() const }{getCustomer() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Customer} $\ast$ Shopping\+Cart\+::get\+Customer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classShoppingCart_a765e303006757a4e01ad2c6729afca9a}{}\label{classShoppingCart_a765e303006757a4e01ad2c6729afca9a}
+
+\begin{DoxyItemize}
+\item gets \hyperlink{classCustomer}{Customer} property of object.
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+customer a \hyperlink{classCustomer}{Customer} argument. 
+\end{DoxyReturn}
+\index{Shopping\+Cart@{Shopping\+Cart}!get\+Payment\+Method@{get\+Payment\+Method}}
+\index{get\+Payment\+Method@{get\+Payment\+Method}!Shopping\+Cart@{Shopping\+Cart}}
+\subsubsection[{\texorpdfstring{get\+Payment\+Method() const }{getPaymentMethod() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Payment} $\ast$ Shopping\+Cart\+::get\+Payment\+Method (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classShoppingCart_ada58cd717f897b9f3c1a2e042674a26b}{}\label{classShoppingCart_ada58cd717f897b9f3c1a2e042674a26b}
+
+\begin{DoxyItemize}
+\item gets Payment\+Method property of object.
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+payment a \hyperlink{classPayment}{Payment} argument. 
+\end{DoxyReturn}
+\index{Shopping\+Cart@{Shopping\+Cart}!get\+Product\+Count@{get\+Product\+Count}}
+\index{get\+Product\+Count@{get\+Product\+Count}!Shopping\+Cart@{Shopping\+Cart}}
+\subsubsection[{\texorpdfstring{get\+Product\+Count()}{getProductCount()}}]{\setlength{\rightskip}{0pt plus 5cm}int Shopping\+Cart\+::get\+Product\+Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classShoppingCart_a13e1f55af8258d1beb8d343e1df7bf20}{}\label{classShoppingCart_a13e1f55af8258d1beb8d343e1df7bf20}
+
+\begin{DoxyItemize}
+\item gets Product\+Count property of object.
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+i a integer argument. 
+\end{DoxyReturn}
+\index{Shopping\+Cart@{Shopping\+Cart}!get\+Total\+Amount@{get\+Total\+Amount}}
+\index{get\+Total\+Amount@{get\+Total\+Amount}!Shopping\+Cart@{Shopping\+Cart}}
+\subsubsection[{\texorpdfstring{get\+Total\+Amount()}{getTotalAmount()}}]{\setlength{\rightskip}{0pt plus 5cm}int Shopping\+Cart\+::get\+Total\+Amount (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classShoppingCart_aa736b231f701ba9011470fd545f7031b}{}\label{classShoppingCart_aa736b231f701ba9011470fd545f7031b}
+
+\begin{DoxyItemize}
+\item Gets an integer type total amount argument and assigns it to the total\+Amount attribute
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+total a integer argument. 
+\end{DoxyReturn}
+\index{Shopping\+Cart@{Shopping\+Cart}!print\+Products@{print\+Products}}
+\index{print\+Products@{print\+Products}!Shopping\+Cart@{Shopping\+Cart}}
+\subsubsection[{\texorpdfstring{print\+Products()}{printProducts()}}]{\setlength{\rightskip}{0pt plus 5cm}void Shopping\+Cart\+::print\+Products (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classShoppingCart_a157942fdeff8e09c48bbd745ab3cf1e4}{}\label{classShoppingCart_a157942fdeff8e09c48bbd745ab3cf1e4}
+
+\begin{DoxyItemize}
+\item Display your purchase product information. 
+\end{DoxyItemize}\index{Shopping\+Cart@{Shopping\+Cart}!remove\+Product@{remove\+Product}}
+\index{remove\+Product@{remove\+Product}!Shopping\+Cart@{Shopping\+Cart}}
+\subsubsection[{\texorpdfstring{remove\+Product(\+Product $\ast$)}{removeProduct(Product *)}}]{\setlength{\rightskip}{0pt plus 5cm}void Shopping\+Cart\+::remove\+Product (
+\begin{DoxyParamCaption}
+\item[{{\bf Product} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}\hypertarget{classShoppingCart_ad82371a6788905b99e6a03e3cd359242}{}\label{classShoppingCart_ad82371a6788905b99e6a03e3cd359242}
+
+
+$\ast$\+Only your choice product is removed in order. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & an \hyperlink{classProduct}{Product} argument. \\
+\hline
+\end{DoxyParams}
+\index{Shopping\+Cart@{Shopping\+Cart}!set\+Bonus\+Used@{set\+Bonus\+Used}}
+\index{set\+Bonus\+Used@{set\+Bonus\+Used}!Shopping\+Cart@{Shopping\+Cart}}
+\subsubsection[{\texorpdfstring{set\+Bonus\+Used()}{setBonusUsed()}}]{\setlength{\rightskip}{0pt plus 5cm}void Shopping\+Cart\+::set\+Bonus\+Used (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classShoppingCart_a2ed167d69492c61daf08754b4e3f99cf}{}\label{classShoppingCart_a2ed167d69492c61daf08754b4e3f99cf}
+
+\begin{DoxyItemize}
+\item Sets Bonus\+Used property of object to given argument.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em Bonus\+Used} & an boolean argument. \\
+\hline
+\end{DoxyParams}
+\index{Shopping\+Cart@{Shopping\+Cart}!set\+Customer@{set\+Customer}}
+\index{set\+Customer@{set\+Customer}!Shopping\+Cart@{Shopping\+Cart}}
+\subsubsection[{\texorpdfstring{set\+Customer(\+Customer $\ast$)}{setCustomer(Customer *)}}]{\setlength{\rightskip}{0pt plus 5cm}void Shopping\+Cart\+::set\+Customer (
+\begin{DoxyParamCaption}
+\item[{{\bf Customer} $\ast$}]{customer}
+\end{DoxyParamCaption}
+)}\hypertarget{classShoppingCart_afa31abf8f6244304419f4e6caf3b109c}{}\label{classShoppingCart_afa31abf8f6244304419f4e6caf3b109c}
+
+\begin{DoxyItemize}
+\item Sets \hyperlink{classCustomer}{Customer} property of object to given argument.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer} & an \hyperlink{classCustomer}{Customer} argument. \\
+\hline
+\end{DoxyParams}
+\index{Shopping\+Cart@{Shopping\+Cart}!set\+Payment\+Method@{set\+Payment\+Method}}
+\index{set\+Payment\+Method@{set\+Payment\+Method}!Shopping\+Cart@{Shopping\+Cart}}
+\subsubsection[{\texorpdfstring{set\+Payment\+Method(\+Payment $\ast$)}{setPaymentMethod(Payment *)}}]{\setlength{\rightskip}{0pt plus 5cm}void Shopping\+Cart\+::set\+Payment\+Method (
+\begin{DoxyParamCaption}
+\item[{{\bf Payment} $\ast$}]{payment}
+\end{DoxyParamCaption}
+)}\hypertarget{classShoppingCart_a1648a74b6b51553740a964d39732f62a}{}\label{classShoppingCart_a1648a74b6b51553740a964d39732f62a}
+
+\begin{DoxyParams}{Parameters}
+{\em payment} & an \hyperlink{classPayment}{Payment} argument. \\
+\hline
+\end{DoxyParams}
+\index{Shopping\+Cart@{Shopping\+Cart}!show\+Invoice@{show\+Invoice}}
+\index{show\+Invoice@{show\+Invoice}!Shopping\+Cart@{Shopping\+Cart}}
+\subsubsection[{\texorpdfstring{show\+Invoice()}{showInvoice()}}]{\setlength{\rightskip}{0pt plus 5cm}void Shopping\+Cart\+::show\+Invoice (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classShoppingCart_a92667291083cd79d8d6c79da851c10e8}{}\label{classShoppingCart_a92667291083cd79d8d6c79da851c10e8}
+
+\begin{DoxyItemize}
+\item Show the customer information on invoice. 
+\end{DoxyItemize}
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ShoppingCart_8h}{Shopping\+Cart.\+h}\item 
+\hyperlink{ShoppingCart_8cpp}{Shopping\+Cart.\+cpp}\end{DoxyCompactItemize}

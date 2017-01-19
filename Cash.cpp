@@ -1,11 +1,9 @@
-/*
- * Cash.cpp
- *
- *  Created on: Dec 24, 2016
- *      Author: eren
- */
-
-#include <iomanip>
+/**
+ * @file Cash.cpp
+ * @Author eren (karaeren042@gmail.com)
+ * @date December, 2016
+ * @brief This file implements Cash class functions
+ */ 
 #include "Cash.h"
 
 Cash::Cash(double amount):Payment(amount) {
@@ -18,7 +16,7 @@ Cash::~Cash() {
 }
 
 void Cash::performPayment() {
-    cout << setprecision(5) << getAmount() << " TL is paid as Cash." << endl;
+    cout << getAmount() << " is paid as Cash." << endl;
 }
 
 string Cash::paymentInfo() {
