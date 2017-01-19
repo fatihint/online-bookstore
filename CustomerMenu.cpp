@@ -34,6 +34,7 @@ void CustomerMenu::menuSwitch(int menuInput) {
             c->setPassword(password);
             c->setEmail(email);
             c->setPhone(phone);
+            c->setAdress(address);
             cusList->push_back(*c);
             customerList = *cusList;
             cout << "Customer Added Successfully !" << endl;
